@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Find out more about Jonathan Fong, UX/UI Student Interaction Designer">
+    <meta name="author" content="Jonathan Fong">
+
+
+    <title>Jonathan's Portfolio | Projects</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <!-- Icons -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Text Animation -->
+    <link rel="stylesheet" href="animate.css">  
+
+    <!-- Custom CSS -->
+    <link href="css/mystylesheet.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-shrink" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="./index.html#page-top">Jonathan Fong</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="./index.html#about">About</a>
+            </li>
+            <li class="nav-item btn-group">
+              <a class="nav-link js-scroll-trigger" href="./index.html#Portfolio" style="padding-right:8px">Portfolio</a>
+              <a class="nav-link dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="padding-left:0">
+                <span class="sr-only">Toggle Dropdown</span>
+              </a>
+              <div class="nav-item dropdown-menu" aria-labelledby="dropdownMenu">
+                <a class="dropdown-item js-scroll-trigger" onclick="openPage('Corgant', '', 'rgb(43, 68, 207)');projectnavA()">Corgant</a>
+                <a class="dropdown-item js-scroll-trigger" onclick="openPage('MealTime', '', 'rgb(43, 68, 207)');projectnavB()">MealTime</a>
+                <a class="dropdown-item js-scroll-trigger" onclick="openPage('Breakdown Analysis', '', 'rgb(43, 68, 207)');projectnavC()">Breakdown Analysis</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" id="critiquenav" href="./index.html#critique">Critique</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" id="resumenav" href="./index.html#Resume">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="./index.html#skillz">Skills/Activities</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="./index.html#links">Links/Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Portfolio -->
+    <!-- <section id="Portfolio">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <h2>My Projects</h2>
+              <hr class="my-4" style="max-width: 90%;">
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 text-center" id="Project1">
+              <div class="row justify-content-center" style="padding-bottom:10px">
+                  <a class="btn btn-primary btn-xl js-scroll-trigger text-white sr-icons" id="projbtnA" href="#Portfolio" onclick="projecttoggleA()">
+                      <h5 style="margin: 0px;">Corgant</h5>
+                  </a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 text-center" id="Project2">
+              <div class="row justify-content-center" style="padding-bottom:10px">
+                  <a class="btn btn-primary btn-xl js-scroll-trigger text-white sr-icons" id="projbtnA" href="#Portfolio" onclick="projecttoggleA()">
+                      <h5 style="margin: 0px;">MealTime</h5>
+                  </a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 text-center" id="Project1">
+              <div class="row justify-content-center" style="padding-bottom:10px">
+                  <a class="btn btn-primary btn-xl js-scroll-trigger text-white sr-icons" id="projbtnA" href="#Portfolio" onclick="projecttoggleA()">
+                      <h5 style="margin: 0px;">Breakdown</h5>
+                  </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="triangleupblueproject p1" id="projecttriangle1" style="display:none"></div>
+        <div class="triangleupblueproject p2" id="projecttriangle2" style="display:none"></div>
+        <div class="triangleupblueproject p3" id="projecttriangle3" style="display:none"></div>
+      </section> -->
+
+      <!-- Tab links -->
+      <div style="height: 50px;">&nbsp;</div>
+      <button class="tablink pA" onclick="openPage('Corgant', this, 'rgb(43, 68, 207)')" id="defaultOpen">Corgant</button>
+      <button class="tablink pB" onclick="openPage('MealTime', this, 'rgb(43, 68, 207)')">MealTime</button>
+      <button class="tablink pC" onclick="openPage('Breakdown Analysis', this, 'rgb(43, 68, 207)')">Breakdown Analysis</button>
+
+      <!-- Tab Content -->
+      <div id="Corgant" class="tabcontent">
+        <!-- <section class="bg-white" id="ProjectA" style="display:block"> -->
+          <div class="container" id="ProjectA">
+            <img src="./img/DSC03823.JPG" width="100%;" style="border-radius: 5%;">
+            <div class="row" style="margin-top: 15px;">
+              <div class="col mx-auto text-center">
+                <img src="./img/Corgant Logo.png" height="120px" width="autopx" style="padding-bottom:10px">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-8 mx-auto text-center">
+                <h2 class="section-heading">Corgant</h2>
+                <hr class="my-4" style="max-width:120px">
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-lg-4 mx-auto">
+                <h5 style="margin-bottom: 20px;"><b>Design Process/Storyboarding</b></h5>
+                <div class="row mx-auto">
+                  <p> During the 2018 summer, I took COGS 187A on Usability and Information Architecture, where I was given a task to form a team with other students and design an app for the elderly population. We began the course by designing a logo to represent our team, which is displayed above the title.</p>
+                  <p> Our first task was to figure out what kind of app we would be designing, so we started out with a series of user testing and interviews to generate personas and storyboards to represent the population we were designing for. We realized several problems that affected the elderly population in general, including loneliness, health and mental complications, lack of technological comfort and usage, and a rapidly growing generational gap. We then focused in on a couple specific issues to tackle, recognizing that it would be nearly impossible for a single app to effectively combat these problems. This resulted in converging on a central idea to bridge the generational gap while helping the elderly in running errands, namely grocery shopping.</p>
+                </div>
+              </div>
+              <div class="col-lg-4 mx-auto">
+                <h5 style="margin-bottom: 20px;"><b>Wireframe/Prototype</b></h5>
+                <div class="row mx-auto">
+                  <p> Our next step in the design phase was to begin prototyping and wireframing this idea into a concrete possibility of an app. We used several individually created paper prototypes to demonstrate basic app functionality and design, but many were not focused enough on the overarching need that we were trying to satisfy, nor had the functionality and content we wanted in our app. After significant redesign and analysis as a team, we put together a prototype cooperatively on a chalkboard. This “chalkboard prototype” was then put onto a wireframing program called Figma.</p>
+                  <p> Our Figma prototype allowed us to add some interactivity and design elements to the prototype that prompted additional user testing to determine if certain features were able to be understood, such as a multiple selection checkbox, or what color schemes or button shapes would be too striking or big for our target population. Below is an example of some of the screens developed during the prototyping phase.</p>
+                  <div class="col mx-auto">
+                    <img class="img-fluid" src="./img/Figma prototype alpha.png" height="auto" width="auto">                
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 mx-auto">
+                <h5 style="margin-bottom: 20px;"><b>High-Fidelity Prototype/Future Direction</b></h5>
+                <div class="row mx-auto">
+                  <p> In the last week of the 5 week course, we put together a working high-fidelity prototype that had many design elements and features we wanted to implement in our final version of our app, which we named “Shoperone”.</p>
+                  <p> Our main features include connecting seniors citizens with volunteers that accompany them throughout their entire shopping experience, from the time they step out the door, to shopping in store, to returning home safely. The app architecture consists of 2 different sides of the app; 1 for volunteers, 1 for seniors. The senior side is designed with simplicity and speed in mind to allow elderly using the app to navigate through as quickly and efficiently as possible without getting lost in the app. The volunteer side is oriented towards the younger generation, being more complex to navigate, yet adding significantly more functionality and options. An additional incentive for volunteers is the ability to reward and track volunteering hours, which is in particular demand during the high school years. This gives seniors using the app a better, more wholesome shopping experience by connecting them with younger volunteers, increasing activity by encouraging elderly to go out and run errands, and providing safety in the form of an on demand assistant.</p>
+                  <p> Due to time constraints, my team and I were not able to take the app to the final form of a working app. However, if there was more time and/or funding, I would have liked to conduct further user testing of the high-fidelity prototype and continue to add features such as other errands and functionality to the app in the public release version.</p>
+                  <div class="col mx-auto">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <section class="bg-grey" id="corgantvid" style="padding-left: 0px; padding-right: 0px;">
+                <div class="justify-content-center text-center">
+                    <h2 class="section-heading">Screen Recordings</h2>
+                    <p style="margin-left: 30px; margin-right: 30px;">Below are a series of screen recordings that display our prototype's user flow, both for seniors (left panel) and volunteers (right panel)</p>
+                    <video width="35%" height="450px;" controls>
+                    <source src="./img/fixed/shoperon-senior.mp4">
+                    </video>
+                    <video width="35%" height="450px" controls>
+                    <source src="./img/fixed/shoperon-volunteer.mp4">
+                    </video>
+                    <h2 class="section-heading" style="margin-top: 20px;">Video Demo</h2>
+                    <p style="margin-left: 30px; margin-right: 30px;">My team and I also created a demo/commercial to showcase our final, finished prototype and demonstrate its intended use. Hope you enjoy!</p>
+                    <video width="80%" height="100%" controls>
+                    <source src="./img/fixed/Shoperone.mp4">
+                    </video>
+                </div>
+                <div class="row justify-content-center text-center" style="padding-top: 20px; font-size: 18px;">
+                    <div class="col justify-content-center text-center">
+                    <a> For more information about the design process, check us out at&nbsp</a><a href="http://medium.com/@corgantcorgi" style="color: inherit;"> http://www.medium.com/@corgantcorgi</a>
+                    </div>
+                </div>
+                <hr class="my-4" style="max-width:120px">
+            </section>
+          </div>
+        <!-- </section> -->
+      </div>
+
+      <div id="MealTime" class="tabcontent">
+          <div class="container" id="ProjectB">
+              <img src="./img/MealTime_Testing_1.jpg" width="100%;" style="border-radius: 5%; margin-bottom: 20px;">
+              <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                  <h2 class="section-heading">MealTime</h2>
+                  <hr class="my-4" style="max-width:120px">
+                </div>
+              </div>
+              <div class="row justify-content-center" style="margin-bottom: 20px;">
+                <div class="col-lg-4 mx-auto">
+                    <h5 style="margin-bottom: 20px;"><b>Needfinding/Low-Fidelity Prototyping</b></h5>
+                  <div class="row mx-auto">
+                    <p> Over the 10 week course, my team and I had the opportunity to tackle the high-level theme of that quarter, which was enhancing some sort of activity in our lives. We decided to develop a mobile website to enhance food and cooking in our daily lives. We came up with a detailed list of specific and unique needs that potential stakeholders and users may have by interviewing several potential users and immersing ourselves into their experience of meal preparation. We then narrowed the list down to a few specific needs that users, particularly college students, might have in meal preparation and cooking, including increasing variety, dealing with leftover or unused groceries, and simplicity and assurance of preparation. </p>
+                    <p> Our next step was to create several personas and storyboards to expand and examine our user needs more closely. This allowed us to develop a point of view statement that encapsulated our problem space, which was crucial to have a clear direction for our project. We also created paper prototypes that gave us a good starting point towards our design to meet the users’ needs, which we reiterated into a digital wireframe solution using Figma. </p>
+                  </div>
+                </div>
+                <div class="col-lg-4 mx-auto">
+                    <h5 style="margin-bottom: 20px;"><b>High-Fidelity Prototyping/Development</b></h5>
+                  <div class="row mx-auto">
+                    <p> Once we had a solid foundation of what we wanted our website to do, we began the most technically challenging part of the design process, which was developing a high-fidelity prototype online. We utilized several web development tools and techniques in HTML, CSS, Javascript, JQuery, and the Bootstrap framework. We also simulated a backend storage and database using URL Search Parameters and LocalStorage, and made queries from the backend with JS Handlebars. I was the primary technology implementer here while developing critical interaction functionality items including Handlebars templates and LocalStorage. </p>
+                    <p>This part of the design process took several weeks of reiteration and development, as we continued to create a basic framework, then added several major functionality interactions, including a navbar, persistent kitchen storage space, a favoriting functionality, a recipe search query/algorithm, and a templating system that would be able to be used across multiple recipes. Towards the end of the development phase, we added stylistic elements and animations to make the site livelier and more polished. </p>
+                  </div>
+                </div>
+                <div class="col-lg-4 mx-auto">
+                    <h5 style="margin-bottom: 20px;"><b>Heuristics Evaluations/User Testing</b></h5>
+                  <div class="row mx-auto">
+                    <p> We also performed heuristic evaluations using <a href='https://www.nngroup.com/articles/ten-usability-heuristics/' style="margin: 0px; color: rgb(83, 178, 255)">Nielsen’s Ten Design Heuristics</a> with other teams at several points throughout the design process. This feedback helped guide us with a set of design principles and guidelines that would make our site more user friendly and easier to use while also preventing errors. </p>
+                    <p> Towards the end of our development phase, we performed several instances of user testing, where we collected data on several parts of our mobile site. We initially tested users on certain aspects of our site’s design and interaction by giving them several tasks and evaluating their performance in completing the tasks. We then used A/B testing to evaluate the effectiveness of specific interaction features. This gave us valuable insight into the mental models of users attempting to use our site compared to our initial assumption of the mental model of our site. </p>
+                    <div class="col mx-auto">
+                      <img class="img-fluid" src="./img/IMG_7565.jpg" height="auto" width="auto">             
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <section class="bg-grey" id="mealTimeMedia" style="padding-left: 0px; padding-right: 0px;">
+                  <div class="justify-content-center text-center">
+                    <h2 class="section-heading">Screen Recordings</h2>
+                    <p style="margin-left: 30px; margin-right: 30px;">Below is a screen recording that displays most of our prototype's user flow</p>
+                    <video width="35%" height="450px;" controls>
+                      <source src="./img/fixed/ScreenRecording_12-06-2018 22-30-26.mp4">
+                    </video>
+                    <h2 class="section-heading" style="margin-top: 20px;">Interactive Demo</h2>
+                    <div class="row text-center justify-content-center">
+                      <p style="margin-left: 30px; margin-right: 30px;">You may also examine the site in your own time by going to the links below, which are listed in decreasing order of completeness. For testing purposes, the login is <b>username: cse170; password: cogs120</b>. Please excuse database limitations; the goal of the site is to demonstrate interaction and functionality, not a backend database.</p>
+                      <ul>
+                        <li><a href="https://zhaoesther.github.io/Mealtime/index.html" style="color: rgb(43, 68, 207);"> MealTime A8 Final</a></li>
+                        <li><a href="https://zhaoesther.github.io/JEA-KitchenA7-Comparative/index.html" style="color: rgb(43, 68, 207);"> MealTime A8</a></li>
+                        <li><a href="https://zhaoesther.github.io/JEA-KitchenA7/index.html" style="color: rgb(43, 68, 207);"> MealTime A7</a></li>
+                        <li><a href="https://jfong02.github.io/JEA-KitchenA6/" style="color: rgb(43, 68, 207);"> MealTime A6</a></li>
+                        <li><a href="https://zhaoesther.github.io/JEA-KitchenA5/index.html" style="color: rgb(43, 68, 207);"> MealTime A5</a></li>
+                        <li><a href="https://zhaoesther.github.io/JEA-Kitchen/index.html" style="color: rgb(43, 68, 207);"> MealTime A4</a></li>
+                      </ul>
+                      <p style="margin-left: 30px; margin-right: 30px;">Note: Current MealTime prototype sites are designed for non-incognito, mobile interfaces. Desktop interface is highly not recommended. If you would like to simulate the mobile interface on the desktop, consider using chrome developer tools and viewing in responsive mode iPhone 6/7/8 (Chrome >> F12 >> ctrl+shift+M >> select iPhone 6/7/8 on top toolbar)</p>
+                    </div>
+                  </div>
+                  <hr class="my-4" style="max-width:120px">
+                </section>
+            </div>
+      </div>
+
+      <div id="Breakdown Analysis" class="tabcontent">
+        <!-- <section class="bg-primary" id="ProjectB" style="display:none"> -->
+          <div class="container" id="ProjectC">
+            <img src="./img/Screenshot (575).png" width="100%;" style="border-radius: 5%; margin-bottom: 20px;">
+            <div class="row">
+              <div class="col-lg-8 mx-auto text-center">
+                <h2 class="section-heading">Breakdown Analysis</h2>
+                <hr class="my-4" style="max-width:120px">
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-lg-4 mx-auto">
+                  <h5 style="margin-bottom: 20px;"><b>Intro/Methods</b></h5>
+                <div class="row mx-auto">
+                  <p> In the spring quarter of 2018, my professor raised an interesting perspective and question on the impact of technology on our daily lives with regard to the nature of when these digital technologies fail us. In particular, the idea that despite today’s digital inundation of technology, there was very little research and information regarding how and where breakdowns of technology affect our daily lives. This topic intrigued me, and I wanted to explore this area of interest in further detail. </p>
+                  <p> I assembled a team of other students in the class who were also interested in this topic. We decided on a data-based approach, and chose to conduct a self-recorded gathering of all breakdown events in our daily lives for a period of 1 week, coded in specific points of interest, such as time, frequency, device, severity, response-related information, etc. Our data was then combined with data from other groups that were researching similar perspectives of the data. </p>
+                </div>
+              </div>
+              <div class="col-lg-4 mx-auto">
+                  <h5 style="margin-bottom: 20px;"><b>Data Analysis</b></h5>
+                <div class="row mx-auto">
+                  <p> Armed with a sizable amount of data, we began analysis of the data, utilizing various charts, graphs, and other data visualizations to determine the nature of breakdown events. We determined a general focus of examining different levels within the digital hierarchy, ranging from hardware, software, and application level. We then focused in on 3 major categories of analysis: 1) Uniqueness and repeatability of breakdowns per level in the digital hierarchy; 2) Ways breakdowns were solved in each level; and 3) Severity of breakdowns per level. These categories allowed us to generate a broad data-based perspective on the nature of breakdowns for every level of abstraction.</p>
+                  <div class="col" style="padding: 0px;">
+                    <img class="img-fluid" src="./img/breakdown analysis results1.png" height="auto" width="auto">
+                    <img class="img-fluid" src="./img/breakdown analysis results2.png" height="auto" width="auto">                
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 mx-auto">
+                  <h5 style="margin-bottom: 20px;"><b>Results/Conclusions</b></h5>
+                <div class="row mx-auto">
+                  <p> The information gathered from the analysis enabled us to find results and draw conclusions based on the data. Among many correlations found, we found that software-related breakdowns seemed to have the lowest recurrences as well as overall number of distinct breakdowns, as compared to hardware and application level breakdowns. Furthermore, the trend of breakdown resolutions were distinct in each level of abstraction, but there were several poignant trends that appeared in the data; in hardware breakdowns, a majority of breakdown events were solved by restarting the device; and in software breakdowns, solutions were derived from alternative technologies rather than fixing the breakdown itself. In terms of severity, there was a trend of software issues being rated more severe on average versus hardware issues or application issues.  </p>
+                  <p> Given these results, we drew some conclusions as to the reason for these trends to occur. One of these examines the reason why software issues are typically rated as more severe being due to most problems involving software issues are unable to be solved directly, which results in frustration of the problem. The results and conclusion from this project supported making technology robust as <a href="https://cacm.acm.org/magazines/2013/10/168179-beyond-efficiency/abstract" style="color: rgb(83, 178, 255);">computer scientist David Ackley argued</a>, as compared to efficiency focused technological design. Limiting breakdowns and designing technology with a heavier emphasis on reliability would drastically improve our day to day life. </p>
+                </div>
+              </div>
+            </div>
+            <section class="bg-grey" id="BreakdownPresentation" style="padding-left: 0px; padding-right: 0px;">
+                <div class="justify-content-center text-center">
+                    <h2 class="section-heading">Presentation Slides</h2>
+                    <p style="margin-left: 30px; margin-right: 30px;">Embedded below is a PDF of the slides from the presentation given at the end of the project.</p>
+                    <embed src="./img/Breakdown Presentation COGS 10 (CAT125).pdf" frameborder="0" width="95%" height="570px;">
+                </div>
+                <hr class="my-4" style="max-width:120px">
+            </section>
+          </div>
+        <!-- </section> -->
+      </div>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Jquery/Scroll Reveal JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+
+    <!-- Scripts -->
+    <script src="js/projectA.js"></script>
+
+  </body>
+
+</html>
