@@ -70,6 +70,37 @@
   //   $("btn.tablinky").attr('id', 'defaultOpen');
   //   $("#defaultOpen").click();
   // })
+
+  var queryParams = new URLSearchParams(window.location.search);
+  // Use the URLSearchParams API to make fake-database queries using a URL
+  // https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams
+  var projectNum = queryParams.get('num');
+  console.log('query for', projectNum);
+
+  if (projectNum == 0 || projectNum == null) {
+    // compile the template
+    var source = $("#tabDisplay1").html();
+    var template = Handlebars.compile(source);
+    var parentDiv = $("#defaultDisplay");
+
+    var curHtml = template(projectNum);
+		parentDiv.append(curHtml);
+  }
+  else if (projectNum == 1) {
+    // compile the template
+    var source = $("#tabDisplay2").html();
+    var template = Handlebars.compile(source);
+    var parentDiv = $("#defaultDisplay");
+
+    var curHtml = template(projectNum);
+		parentDiv.append(curHtml);
+  }
+  else {
+    alert('Search settings incorrect. Please reload the page or try again later');
+  }
+
+
+
   
   function openPage(pageName, elmnt, color) {
       // Hide all elements with class="tabcontent" by default */
@@ -99,13 +130,24 @@
   //For projects via navbar
   function projectnavA() {
     $('.pA').css('background-color', 'rgb(43, 68, 207)');
+    setnum0();
   }
   function projectnavB() {
     $('.pB').css('background-color', 'rgb(43, 68, 207)');
+    setnum1();
   }
-  function projectnavC() {
-    $('.pC').css('background-color', 'rgb(43, 68, 207)');
+  // function projectnavC() {
+  //   $('.pC').css('background-color', 'rgb(43, 68, 207)');
+  // }
+
+  function setnum0() {
+    queryParams.set('num',0);
   }
+
+  function setnum1() {
+    queryParams.set('num',1);
+  }
+
 
   // Get the element with id="defaultOpen" and click on it
   document.getElementById("defaultOpen").click();
