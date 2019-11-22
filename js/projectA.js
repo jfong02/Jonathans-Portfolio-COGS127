@@ -62,18 +62,7 @@
     delay: 200,
     distance: '0px'
   });
-
-  var prevScrollpos = window.pageYOffset;
-  $(window).scroll( () => {
-    var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-      document.getElementById("mainNav").style.top = "0";
-    } else {
-      document.getElementById("mainNav").style.top = "-50px";
-    }
-    prevScrollpos = currentScrollPos;
-    console.log("hello");
-  });
+  
     
 
 }); // End of use strict
