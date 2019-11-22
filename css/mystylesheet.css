@@ -16,7 +16,7 @@ p {
 hr {
   max-width: 50px;
   border-width: 3px;
-  border-color: rgb(30, 32, 172);
+  border-color: #aaa;
 }
 
 hr.light {
@@ -44,7 +44,7 @@ h6 {
 }
 
 .bg-primary {
-  background-color: rgb(43, 68, 207) !important; 
+  background-color: rgb(43, 68, 207) !important;
   /* rgb(30, 52, 172) */
 }
 
@@ -151,6 +151,29 @@ h6 {
   }
 }
 
+.no-padding {
+  padding: 0;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+/* Can be used as mini section */
+.margin-tb-2 {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.ex-padding {
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.less-padding {
+  padding-top: 4em;
+  padding-bottom: 6em;
+}
 
 .text-faded {
   color: rgba(255, 255, 255, 0.75);
@@ -540,8 +563,143 @@ header.masthead p {
 body, html {
   height: 100%;
   margin: 0;
-  font-family: Arial;
+  animation: fadeRiseEffect 0.75s; /* Fading/Rising effect takes 0.75 second */
 }
+
+.project-header {
+  background-color: rgb(64, 2, 180);
+  padding-bottom: 3em;
+  padding-top: 8em;
+}
+
+.project-overview {
+  padding-top: 4em;
+}
+
+.line-height-2 {
+  line-height: 2em;
+}
+
+.line-height-2a5 {
+  line-height: 2.5em;
+}
+
+.project-subheading {
+  margin-bottom: 3em;
+}
+.project-section-title {
+  position: relative;
+}
+.project-section-title span {
+  background-color: #fff;
+  padding: 0px 10px;
+  margin-left: -10px;
+}
+.project-section-title:before {
+  border-top: 1px solid rgba(20,20,20,0.1);
+  content: "";
+  margin: 0 auto;
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  left: -14.5%;
+  bottom: 0;
+  width: 100vw;
+  z-index: -1;
+}
+
+.pre-numbered#num1:before {
+  content: "1 ";
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 1.5rem;
+  color: #ff00bf;
+  font-weight: 600;
+  position: absolute;
+  left: 4em;
+  padding-bottom: 10px;
+  padding-top: 5px;
+  font-style: normal;
+  line-height: 1.3em;
+}
+.pre-numbered#num2:before {
+  content: "2 ";
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 1.5rem;
+  color: #ff00bf;
+  font-weight: 600;
+  position: absolute;
+  left: 4em;
+  padding-bottom: 10px;
+  padding-top: 5px;
+  font-style: normal;
+  line-height: 1.3em;
+}
+.pre-numbered#num3:before {
+  content: "3 ";
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 1.5rem;
+  color: #ff00bf;
+  font-weight: 600;
+  position: absolute;
+  left: 4em;
+  padding-bottom: 10px;
+  padding-top: 5px;
+  font-style: normal;
+  line-height: 1.3em;
+}
+
+.carousel-inner {
+  background-color: #343a40;
+  border-radius: 15px;
+}
+
+.persona-item {
+  padding: 100px 120px 50px 120px;
+  height: 680px;
+  margin: auto;
+  vertical-align: middle;
+  justify-content: center;
+}
+
+.persona-item > .name,
+.persona-item > .description,
+.persona-item > .bio {
+  text-align: center;
+  justify-content: center;
+}
+
+.persona-item > .details
+.persona-item > .details > .needs,
+.persona-item > .details > .pain-pts {
+  text-align: left;
+  justify-content: center;
+}
+
+
+
+
+/* .project-overview-info:before {
+  content: '';
+  width: 1px;
+  height: 90%;
+  float: left;
+  position: absolute;
+  border-left: solid 1px #999;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+.project-overview-info:after {
+  content: '';
+  width: 1px;
+  height: 90%;
+  float: right;
+  position: absolute;
+  border-right: solid 1px #999;
+  right: 0;
+  top: 0;
+  z-index: 1;
+} */
 
 /* Style tab links */
 .tablink {
@@ -579,6 +737,11 @@ body, html {
 @keyframes fadeEffect {
   from {opacity: 0;}
   to {opacity: 1;}
+}
 
+/* Fade/Rise animation */
+@keyframes fadeRiseEffect {
+  from { transform: translateY(1em); opacity: 0; }
+  to   { transform: translateY(0em); opacity: 1; }
 }
 
