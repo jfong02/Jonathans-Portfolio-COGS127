@@ -24,6 +24,9 @@
     href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
     rel='stylesheet' type='text/css'>
   <link
+    href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i&display=swap"
+    rel="stylesheet" tye='text/css'>
+  <link
     href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic'
     rel='stylesheet' type='text/css'>
 
@@ -36,6 +39,9 @@
   <!-- Handlebars.js -->
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js"></script> -->
   <script src="js/handlebars-v4.0.11.js"></script>
+
+  <!-- Scroll Reveal -->
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 
 </head>
 
@@ -93,7 +99,7 @@
       <div class="row">
         <div class="col-lg-11 text-white">
           <h1>
-            Lyft App Redesign
+            Lyft App Case Study
           </h1>
           <div>
             <h5>Mobile Application | COGS 127</h5>
@@ -103,40 +109,41 @@
     </div>
   </section>
 
-  <section class="project-overview">
+  <section id="project-overview">
     <div class="container ex-padding">
       <div class="row">
-        <div class="col-8 mx-auto">
-          <div class="row mx-auto" style="border-bottom: 1px solid #aaa">
+        <div class="col-8 mx-auto" id="proj-overview-col">
+          <div class="row mx-auto" style="border-bottom: 1px solid rgba(20,20,20,0.2)">
             <h3>Project Overview</h3>
             <div class="line-height-2">
-              <p>In a quarter-long project, my team and I researched and designed a variety of features to better foster
+              <p>In a quarter-long project, my team and I researched and designed a variety of ways to better foster
                 communication within the rider-driver dynamic for the rideshare application Lyft.</p>
             </div>
           </div>
           <div class="row mx-auto">
             <div class="col-7 project-overview-info">
               <p><b>Role</b></p>
-              <p>Interaction Designer, User Researcher</p>
-            </div>
-            <div class="col-3 project-overview-info">
-              <p><b>Date</b></p>
-              <p>Fall 2019</p>
+              <p>Visual Designer, Data Analyst</p>
             </div>
             <div class="col-2 project-overview-info">
               <p><b>Duration</b></p>
               <p>8 Weeks</p>
             </div>
+            <div class="col-3 project-overview-info">
+              <p><b>Date</b></p>
+              <p>Fall 2019</p>
+            </div>
           </div>
         </div>
-        <div class="col-4 mx-auto" style="background-color: #aaa">
-          image
+        <div class="col-4 mx-auto" style="background-color: #fff; position: relative" id="proj-overview-img">
+          <img id="banner-phone" src="img/iPhone-8-RoseGold-Lyft-Mockup-Left-svg.svg" class="w-75 rounded"
+            style="position: absolute; right: 10%; bottom: -1em;">
         </div>
       </div>
     </div>
   </section>
 
-  <section class="my-role less-padding">
+  <section id="my-role" class="less-padding">
     <div class="container ex-padding">
       <div class="subheading">
         <h2 class="project-section-title">
@@ -150,25 +157,27 @@
         <p>While I was involved with the team in most of the design process, there were a number of activities that I
           took special interest in.</p>
       </div>
-      <div class="no-margin line-height-2">
-        <div class="pre-numbered" id="num1">
-          <p>Analyzed and created visualizations from user research data</p>
-        </div>
-        <div class="pre-numbered" id="num2">
-          <p>Created personas and initial UI sketches</p>
-        </div>
-        <div class="pre-numbered" id="num3">
-          <p>Conducted usability testing with paper prototypes</p>
-        </div>
-        <div class="pre-numbered" id="num4">
-          <p>Created a number of final design solutions matching the Lyft UI</p>
+      <div id="role-details">
+        <div class="no-margin line-height-2">
+          <div class="pre-numbered" id="num1">
+            <p>Analyzed and created visualizations from user research data</p>
+          </div>
+          <div class="pre-numbered" id="num2">
+            <p>Crafted personas and initial UI sketches</p>
+          </div>
+          <div class="pre-numbered" id="num3">
+            <p>Conducted usability testing with paper prototypes</p>
+          </div>
+          <div class="pre-numbered" id="num4">
+            <p>Created a number of final design solutions matching the Lyft UI</p>
+          </div>
         </div>
       </div>
 
     </div>
   </section>
 
-  <section class="project-process less-padding">
+  <section id="project-process" class="less-padding">
     <div class="container ex-padding">
       <div class="subheading">
         <h2 class="project-section-title">
@@ -179,183 +188,201 @@
             prototyping.</p>
         </div>
       </div>
+      <div class="row" style="text-align: center;">
+        <div class="col-3">
+          <div class="row">
+            <a class="js-scroll-trigger proj-section-link" href="#user-Research" style="color: #000">
+              <h5>User Research and Problem Statement</h5>
+            </a>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="row">
+            <a class="js-scroll-trigger proj-section-link" href="#Personas-UX-UI" style="color: #000">
+              <h5>Personas, Competitive Audit, UI/UX Sketches</h5>
+            </a>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="row">
+            <a class="js-scroll-trigger proj-section-link" href="#LoFi-Prototype" style="color: #000">
+              <h5>Low-Fidelity Prototyping</h5>
+            </a>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="row">
+            <a class="js-scroll-trigger proj-section-link" href="#HiFi-Prototype" style="color: #000">
+              <h5>High-Fidelity Prototyping</h5>
+            </a>
+          </div>
+        </div>
+      </div>
       <div class="row">
-        <div class="col-3">
-          <h5>User Research and Problem Statement</h5>
+        <div class="col-3 pl-5 pr-5 pb-5">
+          <a class="js-scroll-trigger" href="#user-Research">
+            <img src="img/Lyft-Research-Thumbnail-2.png" class="img-thumbnail d-flex w-100" style="border-radius: 50%">
+          </a>
         </div>
-        <div class="col-3">
-          <h5>Personas, Competitive Audit, UI/UX Sketches</h5>
+        <div class="col-3 pl-5 pr-5 pb-5">
+          <a class="js-scroll-trigger" href="#Personas-UX-UI">
+            <img src="img/All Personas.png" class="img-thumbnail d-flex w-100" style="border-radius: 50%">
+          </a>
         </div>
-        <div class="col-3">
-          <h5>Low-Fidelity Prototyping</h5>
+        <div class="col-3 pl-5 pr-5 pb-5">
+          <a class="js-scroll-trigger" href="#LoFi-Prototype">
+            <img src="img/lofi-proto-thumbnail3.png" class="img-thumbnail d-flex w-100" style="border-radius: 50%">
+          </a>
         </div>
-        <div class="col-3">
-          <h5>High-Fidelity Prototyping</h5>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="User-Research less-padding">
-    <div class="container ex-padding">
-      <div class="subheading">
-        <h2 class="project-section-title">
-          <span>User Research and Problem Statement</span>
-        </h2>
-        <div class="row no-margin line-height-2">
-          <p>Empathizing and Needfinding</p>
-        </div>
-      </div>
-      <div class="row no-margin line-height-2">
-        <p>Our primary objective was to understand the user's perspective to better improve quality and/or ease of
-          communication while using the Lyft service. Our target user was the rider side of the Lyft service, due to a
-          higher population of users and a greater magnitude of user needs.</p>
-      </div>
-      <div class="row no-margin margin-tb-2">
-        <div class="row no-margin">
-          <h5 class="line-height-2"><b>There were 3 primary research goals which we hoped to answer:</b></h5>
-        </div>
-        <div class="row no-margin line-height-2">
-          <div class="pre-numbered" id="num1">
-            <p>Understand what drives communication among users and drivers of ride-sharing applications</p>
-          </div>
-          <div class="pre-numbered" id="num2">
-            <p>Find breakdowns in the communication process or trends that made communication between riders and drivers
-              unpleasant</p>
-          </div>
-          <div class="pre-numbered" id="num3">
-            <p>Isolate areas of the application that could lead to more streamlined communication between rider and
-              driver</p>
-          </div>
-        </div>
-      </div>
-      <div class="row no-margin">
-        <h5 class="line-height-2"><b>Research Methods and Findings</b></h5>
-      </div>
-      <div class="row no-margin line-height-2">
-        <p>We utilized a mixture of survey and interviews, which helped us gain a general overview of rider needs while
-          diving deep to obtain more anecdotal response that may uncover pain points and breakdowns. Responses and
-          interviews were obtained from riders as well as drivers, as drivers have a vast level of exposure to several
-          riders and may be able to identify certain trends among their riders.</p>
-      </div>
-      <div class="row no-margin line-height-2">
-        <p>After collecting feedback from user research, we discovered several findings that helped guide our eventual
-          problem statement. One major finding was that people do not like being forced into a conversation or feel like
-          they must talk with their driver. Rather, organic conversation is much more preferred. Furthermore, although
-          there was a sizeable chance that conversation could lead to a negative ride experience, conversation was much
-          more likely to turn a ridesharing experience into a positive experience. Based on our user research, we came
-          up with the following problem statement.</p>
-      </div>
-      <div class="no-margin margin-tb-2">
-        <div class="row no-margin">
-          <h5 class="line-height-2"><b>Problem Statement</b></h5>
-        </div>
-        <div class="row no-margin line-height-2">
-          <p>Lyft riders need a way to better notify their drivers of their preferences and expectations regarding
-            conversation, comfort, accessibility and service throughout the ride-sharing experience. There must be
-            non-intrusive application tweaks that will significantly increase the quality of communication, trust, and
-            overall ride satisfaction between both parties and increase brand equity.</p>
+        <div class="col-3 pl-5 pr-5 pb-5">
+          <a class="js-scroll-trigger" href="#HiFi-Prototype">
+            <img src="img/Pixel-3 Mockup with Chair2-sq.png" class="img-thumbnail d-flex w-100"
+              style="border-radius: 50%">
+            <!-- <svg viewBox="0 0 1 1" width="100" height="100" class="img-thumbnail d-flex w-100" style="border-radius: 50%">
+            <image xlink:href="img/Pixel-3 Mockup with Chair.svg" width="100%" height="100%"
+              preserveAspectRatio="xMidYMid slice" />
+          </svg> -->
+          </a>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="Personas-UX-UI less-padding">
+  <section id="user-Research" class="sr-shortsection less-padding">
     <div class="container ex-padding">
-      <div class="subheading">
-        <h2 class="project-section-title">
-          <span>Personas, Competitive Audit, UX/UI Sketches</span>
-        </h2>
-        <div class="row no-margin line-height-2">
-          <p>Formulating Possible Solutions</p>
-        </div>
-      </div>
-      <div class="row no-margin line-height-2">
-        <p>Once we had a problem statement and mindset for the project, we began formulating solutions based off of
-          potential stakeholders and their needs.</p>
-      </div>
-      <div class="no-margin margin-tb-2">
-        <div class="no-margin">
-          <h5 class="line-height-2"><b>Personas</b></h5>
+      <div id="usr-research-intro">
+        <div class="subheading">
+          <h2 class="project-section-title">
+            <span>User Research and Problem Statement</span>
+          </h2>
+          <div class="row no-margin line-height-2">
+            <p>Empathizing and Needfinding</p>
+          </div>
         </div>
         <div class="row no-margin line-height-2">
-          <p>We began looking at several potential personas who would make up our target user group. Each persona had a
-            different motive and personality, and was based on some of the trends found from the user research performed
-            prior to this stage.</p>
+          <p>Our primary objective was to understand the user's perspective to better improve quality and/or ease of
+            communication while using the Lyft service. Our target user was the rider side of the Lyft service, due to a
+            higher population of users and a greater magnitude of user needs.</p>
         </div>
       </div>
 
-      <div class="personas carousel slide margin-tb-2 mb-5 text-white" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselIndicators" data-slide-to="2"></li>
-          <li data-target="#carouselIndicators" data-slide-to="3"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="persona-item col-12 align-items-center text-align-center">
-              <div class="row name">
-                <h4>Jenny - The Social Butterfly</h4>
-              </div>
-              <div class="row description">
-                <h5>Extroverted, Great Talker, Friendly, Funny</h5>
-              </div>
-              <hr style="max-width: 100%">
-              <div class="row bio">
-                <h5 style="text-align: center">Biography</h5>
-                <h6>A recent graduate from Ohio State, Jenny is taking some time traveling to different cities to
-                  explore new environments and meet new people. Jenny actively seeks out human connection through
-                  conversation. She is curious about the human condition, social experience, and thrive in social
-                  settings. Social silence makes her feel awkward so she feels that vacuum with her own voice when it
-                  presents itself.</h6>
-              </div>
-              <hr style="max-width: 100%">
-              <div class="row details">
-                <div class="col-6 needs">
-                  <h5 style="text-align: center">Needs</h5>
-                  <ul>
-                    <li>
-                      <h6>While she is traveling, she often takes Lyft to get to places like airports and hotels.</h6>
-                    </li>
-                    <li>
-                      <h6>She would like to have nice conversations with the drivers about the cities they are in and
-                        explore
-                        different cultures.</h6>
-                    </li>
-                  </ul>
-                </div>
-                <div class="col-6 pain-pts">
-                  <h5 style="text-align: center">Pain Points</h5>
-                  <ul>
-                    <li>
-                      <h6>Some drivers do not talk much during the ride so she would think the ride experiences are
-                        silent and
-                        awkward. </h6>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+      <div id="research-goals">
+        <div class="row no-margin margin-tb-2">
+          <div class="row no-margin">
+            <h5 class="line-height-2"><b>There were 3 primary research goals which we hoped to answer:</b></h5>
+          </div>
+          <div class="row no-margin line-height-2">
+            <div class="pre-numbered" id="num1">
+              <p>Understand what drives communication among users and drivers of ride-sharing applications</p>
+            </div>
+            <div class="pre-numbered" id="num2">
+              <p>Find breakdowns in the communication process or trends that made communication between riders and
+                drivers
+                unpleasant</p>
+            </div>
+            <div class="pre-numbered" id="num3">
+              <p>Isolate areas of the application that could lead to more streamlined communication between rider and
+                driver</p>
             </div>
           </div>
-          <div class="carousel-item">
-            <div class="d-block w-100">
+        </div>
+      </div>
+
+      <div id="research-methods">
+        <div class="row no-margin">
+          <h5 class="line-height-2"><b>Research Methods and Findings</b></h5>
+        </div>
+        <div class="row no-margin line-height-2">
+          <p>We utilized a mixture of survey and interviews, which helped us gain a general overview of rider needs
+            while diving deep to obtain more anecdotal response that may uncover pain points and breakdowns. Responses
+            and interviews were obtained from riders as well as drivers, as drivers have a vast level of exposure to
+            several riders and may be able to identify certain trends among their riders.</p>
+        </div>
+        <div class="row no-margin line-height-2">
+          <p>After collecting feedback from user research, we discovered several findings that helped guide our eventual
+            problem statement. One major finding was that people do not like being forced into a conversation or feel
+            like they must talk with their driver. Rather, organic conversation is much more preferred. Furthermore,
+            although there was a sizeable chance that conversation could lead to a negative ride experience,
+            conversation was much more likely to turn a ridesharing experience into a positive experience. Based on our
+            user research, we came up with the following problem statement.</p>
+        </div>
+      </div>
+
+      <div id="probl-state">
+        <div class="no-margin margin-tb-2">
+          <div class="row no-margin">
+            <h5 class="line-height-2"><b>Problem Statement</b></h5>
+          </div>
+          <div class="row no-margin line-height-2">
+            <p>Lyft riders need a way to better notify their drivers of their preferences and expectations regarding
+              conversation, comfort, accessibility and service throughout the ride-sharing experience. There must be
+              non-intrusive application tweaks that will significantly increase the quality of communication, trust, and
+              overall ride satisfaction between both parties and increase brand equity.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="Personas-UX-UI" class="less-padding">
+    <div class="container ex-padding">
+      <div id="personas-intro">
+        <div class="subheading">
+          <h2 class="project-section-title">
+            <span>Personas, Competitive Audit, UX/UI Sketches</span>
+          </h2>
+          <div class="row no-margin line-height-2">
+            <p>Formulating Possible Solutions</p>
+          </div>
+        </div>
+        <div class="row no-margin line-height-2">
+          <p>Once we had a problem statement and mindset for the project, we began formulating solutions based off of
+            potential stakeholders and their needs.</p>
+        </div>
+      </div>
+
+      <div id="personas-stuff">
+        <div class="no-margin margin-tb-2">
+          <div class="no-margin">
+            <h5 class="line-height-2"><b>Personas</b></h5>
+          </div>
+          <div class="row no-margin line-height-2">
+            <p>We began looking at several potential personas who would make up our target user group. Each persona had
+              a
+              different motive and personality, and was based on some of the trends found from the user research
+              performed
+              prior to this stage.</p>
+          </div>
+        </div>
+
+        <div id="personaSlide" class="personas carousel slide margin-tb-2 mb-5 text-white" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#personaSlide" data-slide-to="0" class="active"></li>
+            <li data-target="#personaSlide" data-slide-to="1"></li>
+            <li data-target="#personaSlide" data-slide-to="2"></li>
+            <li data-target="#personaSlide" data-slide-to="3"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-interval="10000">
               <div class="persona-item col-12 align-items-center text-align-center">
+                <div class="row persona-pic">
+                  <img src="img/Jenny.png" class="rounded d-flex p-pic mb-1">
+                </div>
                 <div class="row name">
-                  <h4>Elon - Mister Industrious</h4>
+                  <h4>Jenny - The Social Butterfly</h4>
                 </div>
                 <div class="row description">
-                  <h5>Hard Worker, Indifferent, Pefectionist, Industrious</h5>
+                  <h5>Extroverted, Great Talker, Friendly, Funny</h5>
                 </div>
                 <hr style="max-width: 100%">
                 <div class="row bio">
                   <h5 style="text-align: center">Biography</h5>
-                  <h6>A project lead for a big tech firm, Elon is always busy with his work. He works hard and strives
-                    to
-                    earn a good living. He likes to be organized himself, and tends to fix little things in his life
-                    into his model of perfection. Yet he does not care much about others and is often nonchalant. He
-                    takes Lyft to his work every morning, and usually he is on his computer or tablet preparing for his
-                    conference or presentation during the whole ride. <h6>
+                  <h6>A recent graduate from Ohio State, Jenny is taking some time traveling to different cities to
+                    explore new environments and meet new people. Jenny actively seeks out human connection through
+                    conversation. She is curious about the human condition, social experience, and thrive in social
+                    settings. Social silence makes her feel awkward so she feels that vacuum with her own voice when it
+                    presents itself.</h6>
                 </div>
                 <hr style="max-width: 100%">
                 <div class="row details">
@@ -363,11 +390,12 @@
                     <h5 style="text-align: center">Needs</h5>
                     <ul>
                       <li>
-                        <h6>Elon takes Lyft everyday to work.</h6>
+                        <h6>While she is traveling, she often takes Lyft to get to places like airports and hotels.</h6>
                       </li>
                       <li>
-                        <h6>During the ride, he expects a quiet and undisturbed experience while he takes care of
-                          work-related issues.</h6>
+                        <h6>She would like to have nice conversations with the drivers about the cities they are in and
+                          explore
+                          different cultures.</h6>
                       </li>
                     </ul>
                   </div>
@@ -375,16 +403,182 @@
                     <h5 style="text-align: center">Pain Points</h5>
                     <ul>
                       <li>
-                        <h6>Sometimes the drivers keep talking to him while he prepares for his work in the car, and he
-                          feels disturbed and annoyed.</h6>
+                        <h6>Some drivers do not talk much during the ride so she would think the ride experiences are
+                          silent and
+                          awkward. </h6>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item" data-interval="10000">
+              <div class="d-block w-100">
+                <div class="persona-item col-12 align-items-center text-align-center">
+                  <div class="row persona-pic">
+                    <img src="img/Elon.png" class="rounded d-flex p-pic mb-1">
+                  </div>
+                  <div class="row name">
+                    <h4>Elon - Mister Industrious</h4>
+                  </div>
+                  <div class="row description">
+                    <h5>Hard Worker, Indifferent, Pefectionist, Industrious</h5>
+                  </div>
+                  <hr style="max-width: 100%">
+                  <div class="row bio">
+                    <h5 style="text-align: center">Biography</h5>
+                    <h6>A project lead for a big tech firm, Elon is always busy with his work. He works hard and strives
+                      to
+                      earn a good living. He likes to be organized himself, and tends to fix little things in his life
+                      into his model of perfection. Yet he does not care much about others and is often nonchalant. He
+                      takes Lyft to his work every morning, and usually he is on his computer or tablet preparing for
+                      his
+                      conference or presentation during the whole ride. <h6>
+                  </div>
+                  <hr style="max-width: 100%">
+                  <div class="row details">
+                    <div class="col-6 needs">
+                      <h5 style="text-align: center">Needs</h5>
+                      <ul>
+                        <li>
+                          <h6>Elon takes Lyft everyday to work.</h6>
+                        </li>
+                        <li>
+                          <h6>During the ride, he expects a quiet and undisturbed experience while he takes care of
+                            work-related issues.</h6>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-6 pain-pts">
+                      <h5 style="text-align: center">Pain Points</h5>
+                      <ul>
+                        <li>
+                          <h6>Sometimes the drivers keep talking to him while he prepares for his work in the car, and
+                            he
+                            feels disturbed and annoyed.</h6>
+                        </li>
+                        <li>
+                          <h6>He does not like when a driver drives too slow or take an alternative route so it would
+                            make
+                            him late for work.</h6>
+                        </li>
+                        <li>
+                          <h6>As an organized and clean person, he does not like when the car smells bad.
+                          </h6>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item" data-interval="10000">
+              <div class="persona-item col-12 align-items-center text-align-center">
+                <div class="row persona-pic">
+                  <img src="img/Kiro.png" class="rounded d-flex p-pic mb-1">
+                </div>
+                <div class="row name">
+                  <h4>Kiro - The Foreigner</h4>
+                </div>
+                <div class="row description">
+                  <h5>Ambivert, Friendly, Studious, Gentle</h5>
+                </div>
+                <hr style="max-width: 100%">
+                <div class="row bio">
+                  <h5 style="text-align: center">Biography</h5>
+                  <h6>As an international student from Tokyo, Kiro is used to the public transportation from home. Now
+                    he
+                    is studying at UCLA and does not have a car, he has to use Lyft to get to places during the
+                    weekends,
+                    and even sometimes to campus. He usually does not initiate conversation in public scenarios partly
+                    due
+                    to the fact that he is still learning English, but still can have a great time chatting with other
+                    people so that he can learn things about his new environment and practice the language. Kiro also
+                    does
+                    not have the best constitution and could get sick easily if he does not dress properly or the
+                    temperature is too high or too low. </h6>
+                </div>
+                <hr style="max-width: 100%">
+                <div class="row details">
+                  <div class="col-6 needs">
+                    <h5 style="text-align: center">Needs</h5>
+                    <ul>
+                      <li>
+                        <h6>Kiro takes Lyft to campus and other places in a city whose public transportation system is
+                          not
+                          so advanced.</h6>
                       </li>
                       <li>
-                        <h6>He does not like when a driver drives too slow or take an alternative route so it would make
-                          him late for work.</h6>
+                        <h6>Kiro is not a native English speaker so he would prefer drivers to speak in an
+                          easy-to-follow
+                          manner with concise wording.</h6>
                       </li>
                       <li>
-                        <h6>As an organized and clean person, he does not like when the car smells bad.
+                        <h6>Kiro would like the temperature in the cars to be his preferred setting.</h6>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-6 pain-pts">
+                    <h5 style="text-align: center">Pain Points</h5>
+                    <ul>
+                      <li>
+                        <h6>When the driver speaks too fast so he could not understand, he gets frustrated.</h6>
+                      </li>
+                      <li>
+                        <h6>When the AC in the car is set to a temperature too cold, or when the windows are open all
+                          the
+                          way during the ride, Kiro may get headache afterwards.</h6>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item" data-interval="10000">
+              <div class="persona-item col-12 align-items-center text-align-center">
+                <div class="row persona-pic">
+                  <img src="img/Malina.png" class="rounded d-flex p-pic mb-1">
+                </div>
+                <div class="row name">
+                  <h4>Malina - The Silent One</h4>
+                </div>
+                <div class="row description">
+                  <h5>Introverted, Reserved, Shy, Anti-Social</h5>
+                </div>
+                <hr style="max-width: 100%">
+                <div class="row bio">
+                  <h6>Malina is quiet with everyone around her. Maybe only two or three close friends of her could make
+                    her talk for over a few minutes straight. She does not enjoy most of the social convention. Public
+                    speaking is a nightmare to her, and talking to strangers is definitely out of the picture. She only
+                    stays in her comfort zone. Now, as a third year college student, she moved out of campus and has to
+                    take Lyft to school since she does not drive. </h6>
+                </div>
+                <hr style="max-width: 100%">
+                <div class="row details">
+                  <div class="col-6 needs">
+                    <h5 style="text-align: center">Needs</h5>
+                    <ul>
+                      <li>
+                        <h6>She does not drive herself so she takes Lyft to campus when she has classes.</h6>
+                      </li>
+                      <li>
+                        <h6>She expects no conversation at all with the drivers.</h6>
+                      </li>
+                      <li>
+                        <h6>She would like to feel comfortable and safe during the ride.</h6>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-6 pain-pts">
+                    <h5 style="text-align: center">Pain Points</h5>
+                    <ul>
+                      <li>
+                        <h6>She hates when drivers start talking to her, and ask her about her personal information.
                         </h6>
+                      </li>
+                      <li>
+                        <h6>She gets car sick easily, so if a driver drives the car in an erratic way she would not feel
+                          so good afterwards.</h6>
                       </li>
                     </ul>
                   </div>
@@ -392,457 +586,494 @@
               </div>
             </div>
           </div>
-          <div class="carousel-item">
-            <div class="persona-item col-12 align-items-center text-align-center">
-              <div class="row name">
-                <h4>Kiro - The Foreigner</h4>
-              </div>
-              <div class="row description">
-                <h5>Ambivert, Friendly, Studious, Gentle</h5>
-              </div>
-              <hr style="max-width: 100%">
-              <div class="row bio">
-                <h5 style="text-align: center">Biography</h5>
-                <h6>As an international student from Tokyo, Kiro is used to the public transportation from home. Now he
-                  is studying at UCLA and does not have a car, he has to use Lyft to get to places during the weekends,
-                  and even sometimes to campus. He usually does not initiate conversation in public scenarios partly due
-                  to the fact that he is still learning English, but still can have a great time chatting with other
-                  people so that he can learn things about his new environment and practice the language. Kiro also does
-                  not have the best constitution and could get sick easily if he does not dress properly or the
-                  temperature is too high or too low. </h6>
-              </div>
-              <hr style="max-width: 100%">
-              <div class="row details">
-                <div class="col-6 needs">
-                  <h5 style="text-align: center">Needs</h5>
-                  <ul>
-                    <li>
-                      <h6>Kiro takes Lyft to campus and other places in a city whose public transportation system is not
-                        so advanced.</h6>
-                    </li>
-                    <li>
-                      <h6>Kiro is not a native English speaker so he would prefer drivers to speak in an easy-to-follow
-                        manner with concise wording.</h6>
-                    </li>
-                    <li>
-                      <h6>Kiro would like the temperature in the cars to be his preferred setting.</h6>
-                    </li>
-                  </ul>
-                </div>
-                <div class="col-6 pain-pts">
-                  <h5 style="text-align: center">Pain Points</h5>
-                  <ul>
-                    <li>
-                      <h6>When the driver speaks too fast so he could not understand, he gets frustrated.</h6>
-                    </li>
-                    <li>
-                      <h6>When the AC in the car is set to a temperature too cold, or when the windows are open all the
-                        way during the ride, Kiro may get headache afterwards.</h6>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="persona-item col-12 align-items-center text-align-center">
-              <div class="row name">
-                <h4>Malina - The Silent One</h4>
-              </div>
-              <div class="row description">
-                <h5>Introverted, Reserved, Shy, Anti-Social</h5>
-              </div>
-              <hr style="max-width: 100%">
-              <div class="row bio">
-                <h6>Malina is quiet with everyone around her. Maybe only two or three close friends of her could make
-                  her talk for over a few minutes straight. She does not enjoy most of the social convention. Public
-                  speaking is a nightmare to her, and talking to strangers is definitely out of the picture. She only
-                  stays in her comfort zone. Now, as a third year college student, she moved out of campus and has to
-                  take Lyft to school since she does not drive. </h6>
-              </div>
-              <hr style="max-width: 100%">
-              <div class="row details">
-                <div class="col-6 needs">
-                  <h5 style="text-align: center">Needs</h5>
-                  <ul>
-                    <li>
-                      <h6>She does not drive herself so she takes Lyft to campus when she has classes.</h6>
-                    </li>
-                    <li>
-                      <h6>She expects no conversation at all with the drivers.</h6>
-                    </li>
-                    <li>
-                      <h6>She would like to feel comfortable and safe during the ride.</h6>
-                    </li>
-                  </ul>
-                </div>
-                <div class="col-6 pain-pts">
-                  <h5 style="text-align: center">Pain Points</h5>
-                  <ul>
-                    <li>
-                      <h6>She hates when drivers start talking to her, and ask her about her personal information.</h6>
-                    </li>
-                    <li>
-                      <h6>She gets car sick easily, so if a driver drives the car in an erratic way she would not feel
-                        so good afterwards.</h6>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
+          <a class="carousel-control-prev" href="#personaSlide" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#personaSlide" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
-        <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
       </div>
 
-      <div class="row mt-5 no-margin">
-        <h5 class="line-height-2"><b>Competitive Audit</b></h5>
-      </div>
-      <div class="row no-margin line-height-2">
-        <p>In order to examine the Lyft app from a holistic approach, we examined 4 other ridesharing services, and
-          based our audit on several key characteristics. The chart below displays a summary of the general results of
-          our competitive audit.</p>
-      </div>
-      <div class="row no-margin">
-        <table class="table table-bordered">
-          <thead class="thead-dark">
-            <tr>
-              <th scope="col">Ridesharing Service</th>
-              <th scope="col">Conversation Level/Mood</th>
-              <th scope="col">Contextual Rating System</th>
-              <th scope="col">Miscellaneous Comfort Features</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">Uber</th>
-              <td>Single-option conversation preference (Uber Black Only)</td>
-              <td>Option to submit what went wrong under 5 stars</td>
-              <td>Temperature preference (Uber Black Only</td>
-            </tr>
-            <tr>
-              <th scope="row">Wingz</th>
-              <td>Special request note</td>
-              <td>Textbox for feedback and recurring favorited drivers</td>
-              <td>Driver discretion</td>
-            </tr>
-            <tr>
-              <th scope="row">Flywheel</th>
-              <td>Special request note</td>
-              <td>Licensed Taxi Drivers - Not Rated</td>
-              <td>Driver discretion</td>
-            </tr>
-            <tr>
-              <th scope="row">Juno</th>
-              <td>"Quiet Time" option & special request note</td>
-              <td>Some label-based selections</td>
-              <td>Driver discretion</td>
-            </tr>
-            <tr>
-              <th scope="row">Lyft (Redesigned)</th>
-              <td>Multiple-level conversation setting</td>
-              <td>Metatag-based rating system</td>
-              <td>Before-ride and in-ride notifications to the driver</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="no-margin margin-tb-2">
+      <div id="competitive-audit" class="no-margin margin-tb-2">
+        <div class="row mt-5 no-margin">
+          <h5 class="line-height-2"><b>Competitive Audit</b></h5>
+        </div>
+        <div class="row no-margin line-height-2">
+          <p>In order to examine the Lyft app from a holistic approach, we examined 4 other ridesharing services, and
+            based our audit on several key characteristics. The chart below displays a summary of the general results of
+            our competitive audit.</p>
+        </div>
         <div class="row no-margin">
-          <h5 class="line-height-2"><b>UX Flow</b></h5>
+          <table class="table table-bordered">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">Ridesharing Service</th>
+                <th scope="col">Conversation Settings</th>
+                <th scope="col">Contextual Rating System</th>
+                <th scope="col">Miscellaneous Comfort Features</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Uber</th>
+                <td>Single-option conversation preference (Uber Black Only)</td>
+                <td>Option to submit what went wrong under 5 stars</td>
+                <td>Temperature preference (Uber Black Only</td>
+              </tr>
+              <tr>
+                <th scope="row">Wingz</th>
+                <td>Special request note</td>
+                <td>Textbox for feedback and recurring favorited drivers</td>
+                <td>Driver discretion</td>
+              </tr>
+              <tr>
+                <th scope="row">Flywheel</th>
+                <td>Special request note</td>
+                <td>Licensed Taxi Drivers - Not Rated</td>
+                <td>Driver discretion</td>
+              </tr>
+              <tr>
+                <th scope="row">Juno</th>
+                <td>"Quiet Time" option & special request note</td>
+                <td>Some label-based selections</td>
+                <td>Driver discretion</td>
+              </tr>
+              <tr>
+                <th scope="row">Lyft (Redesigned)</th>
+                <td>Multi-level conversation setting</td>
+                <td>Metatag-based rating system</td>
+                <td>Before-ride & in-ride driver notifications</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        <div class="row no-margin line-height-2">
-          <p>With our primary research complete, we set out to formulate potential solutions. After collaborating
-            together as a team, we discussed potential approaches, and eventually narrowed down our solutions to four
-            <i>Entry Points</i> in the UX flow we wanted to redesign, which was created in Figma. These included
-            language
-            and
-            accessibility, conversation and clothing options, mid-drive options, and a contextual feedback system.</p>
-        </div>
-        <div class="ux-flow-img margin-tb-2">
-          <img src="./img/UX Flow Lyft-Removed Personas.jpg" class="d-block w-100">
-        </div>
-        <div class="row no-margin line-height-2">
-          <div class="col-6 no-margin line-height-2">
-            <p><u>Entry Point 1</u></p>
-            <p>Our primary goal here was to add accessibility information to better communicate with the driver. We also
-              felt that adding a language area would help to communicate to the driver the rider's preferred means of
-              communication and any difficulty the rider may have communicating to the driver.</p>
-          </div>
-          <div class="col-6 no-margin line-height-2">
-            <p><u>Entry Point 3</u></p>
-            <p>For our more sensitive users, we created an in-ride panel of options to adjust some of their desired car
-              environments. This could also apply to those who did not desire conversation, yet would still be able to
-              communicate to their driver in specific ways.</p>
-          </div>
-          <div class="col-6 no-margin line-height-2">
-            <p><u>Entry Point 2</u></p>
-            <p>Some responses from our user research indicated that different levels of conversation may result in a
-              better ride experience. We developed this feature so that the rider would be able to make the decision of
-              how much they would be willing to talk, which would improve ride quality. Additionally, we also included a
-              clothing option tab and a special request box so that the rider could better communicate to their driver
-              who they were when being picked up, as well as any special requests they might have. All these features
-              woud ideally be optional for the rushed user.</p>
-          </div>
-          <div class="col-6 no-margin line-height-2">
-            <p><u>Entry Point 4</u></p>
-            <p>The catalyst for this area of redesign was based on our user research, where we asked users to describe
-              their most positive or negative experiences using a rideshare application. We realized that this
-              information would be extremely useful to potential riders, but the 5-star rating alone could not
-              sufficiently communicate this information. To resolve this issue, we wanted to include a contextual rating
-              system that would better communicate both to drivers and riders a more holistic ride experience, whether
-              it be a positive or negative experience.</p>
-          </div>
+      </div>
 
-        </div>
-      </div>
-      <div class="row mt-5 no-margin">
-        <h5 class="line-height-2"><b>UI Sketches</b></h5>
-      </div>
-      <div class="row no-margin line-height-2">
-        <p>Once we had a baseline understanding of where our redesigns might need to be implemented, we began discussing
-          what the UI skeleton might contain. I set out to create a preliminary basic ui sketches by hand for fast
-          prototyping, which we were able to utilize to further develop our design.</p>
-        <p>Our main focus in the UI sketches was to replicate the current design scheme while adding additional avenues
-          of communication between the user and driver.</p>
-      </div>
-      <div class="ui-sketch-img">
-        <img src="./img/UI Sketches Combined.png" class="d-block w-100" style="margin-bottom: 2em;">
-        <div class="row">
-          <div class="col-6">
-            <u>Entry Point 1 & 3</u>
-            <img src="./img/Scan Oct 24, 2019-1 (with divider).jpg" class="d-block w-100">
+      <div class="no-margin margin-tb-2">
+        <div id="ux-flow">
+          <div class="row no-margin">
+            <h5 class="line-height-2"><b>UX Flow</b></h5>
           </div>
-          <div class="col-6">
-            <u>Entry Point 2</u>
-            <img src="./img/Scan Oct 24, 2019-2.jpg" class="d-block w-100">
+          <div class="row no-margin line-height-2">
+            <p>With our primary research complete, we set out to formulate potential solutions. After collaborating
+              together as a team, we discussed potential approaches, and eventually narrowed down our solutions to four
+              <i>Entry Points</i> in the UX flow we wanted to redesign, which was created in Figma. These included
+              language
+              and
+              accessibility, conversation and clothing options, mid-drive options, and a contextual feedback system.</p>
           </div>
-          <div class="col-6">
-            <u>Entry Point 4</u>
-            <img src="./img/Scan Oct 24, 2019-3.jpg" class="d-block w-100">
+          <div class="ux-flow-img margin-tb-2">
+            <img src="./img/UX Flow Lyft-Removed Personas.jpg" class="d-block w-100">
           </div>
         </div>
+        <div id="ux-flow-explain">
+          <div class="row no-margin line-height-2">
+            <div class="col-6 no-margin line-height-2">
+              <p><u>Entry Point 1</u></p>
+              <p>Our primary goal here was to add accessibility information to better communicate with the driver. We
+                also
+                felt that adding a language area would help to communicate to the driver the rider's preferred means of
+                communication and any difficulty the rider may have communicating to the driver.</p>
+            </div>
+            <div class="col-6 no-margin line-height-2">
+              <p><u>Entry Point 3</u></p>
+              <p>For our more sensitive users, we created an in-ride panel of options to adjust some of their desired
+                car
+                environments. This could also apply to those who did not desire conversation, yet would still be able to
+                communicate to their driver in specific ways.</p>
+            </div>
+            <div class="col-6 no-margin line-height-2">
+              <p><u>Entry Point 2</u></p>
+              <p>Some responses from our user research indicated that different levels of conversation may result in a
+                better ride experience. We developed this feature so that the rider would be able to make the decision
+                of
+                how much they would be willing to talk, which would improve ride quality. Additionally, we also included
+                a
+                clothing option tab and a special request box so that the rider could better communicate to their driver
+                who they were when being picked up, as well as any special requests they might have. All these features
+                woud ideally be optional for the rushed user.</p>
+            </div>
+            <div class="col-6 no-margin line-height-2">
+              <p><u>Entry Point 4</u></p>
+              <p>The catalyst for this area of redesign was based on our user research, where we asked users to describe
+                their most positive or negative experiences using a rideshare application. We realized that this
+                information would be extremely useful to potential riders, but the 5-star rating alone could not
+                sufficiently communicate this information. To resolve this issue, we wanted to include a contextual
+                rating
+                system that would better communicate both to drivers and riders a more holistic ride experience, whether
+                it be a positive or negative experience.</p>
+            </div>
+          </div>
+        </div>
       </div>
+
+      <div id="ui-sketch" class="no-margin margin-tb-2">
+        <div class="row mt-5 no-margin">
+          <h5 class="line-height-2"><b>UI Sketches</b></h5>
+        </div>
+        <div class="row no-margin line-height-2">
+          <p>Once we had a baseline understanding of where our redesigns might need to be implemented, we began
+            discussing
+            what the UI skeleton might contain. I set out to create a preliminary basic ui sketches by hand for fast
+            prototyping, which we were able to utilize to further develop our design.</p>
+          <p>Our main focus in the UI sketches was to replicate the current design scheme while adding additional
+            avenues
+            of communication between the user and driver.</p>
+        </div>
+        <div class="ui-sketch-img">
+          <img src="./img/UI Sketches Combined.png" class="d-block w-100" style="margin-bottom: 2em;">
+          <div class="row">
+            <div class="col-6">
+              <u>Entry Point 1 & 3</u>
+              <img src="./img/Scan Oct 24, 2019-1 (with divider).jpg" class="d-block w-100">
+            </div>
+            <div class="col-6">
+              <u>Entry Point 2</u>
+              <img src="./img/Scan Oct 24, 2019-2.jpg" class="d-block w-100">
+            </div>
+            <div class="col-6">
+              <u>Entry Point 4</u>
+              <img src="./img/Scan Oct 24, 2019-3.jpg" class="d-block w-100">
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
-  <section class="LoFi-Prototype less-padding">
+  <section id="LoFi-Prototype" class="less-padding">
     <div class="container ex-padding">
-      <div class="subheading">
-        <h2 class="project-section-title">
-          <span>Low-Fidelity Prototyping</span>
-        </h2>
+      <div id="lofi-intro">
+        <div class="subheading">
+          <h2 class="project-section-title">
+            <span>Low-Fidelity Prototyping</span>
+          </h2>
+          <div class="row no-margin line-height-2">
+            <p>Informed Design Iterations & User Feedback</p>
+          </div>
+        </div>
+
         <div class="row no-margin line-height-2">
-          <p>Informed Design Iterations & User Feedback</p>
+          <p>With an initial design on paper, we decided to shift gears and return back to perform an initial round of
+            user testing to make more informed design decisions. We developed two different prototypes each for our most
+            high profile entry points, and proceeded to perform A/B testing to determine the right direction to take our
+            redesign.</p>
         </div>
       </div>
 
-      <div class="row no-margin line-height-2">
-        <p>With an initial design on paper, we decided to shift gears and return back to perform an initial round of
-          user testing to make more informed design decisions. We developed two different prototypes each for our most
-          high profile entry points, and proceeded to perform A/B testing to determine the right direction to take our
-          redesign.</p>
-      </div>
 
       <div class="lowfi-proto-img line-height-2">
         <img src="./img/Stiched Lo-Fi Prototype.png" class="d-block w-100">
       </div>
 
-      <div class="row mt-5 no-margin">
-        <h5 class="line-height-2"><u>Entry Point 1</u></h5>
-      </div>
-      <div class="row no-margin line-height-2">
-        <p>In Entry Point 1, our goal was to make design choices that would be low-impact and seamlessly connect with
-          the current profile page UI of Lyft. We added additional accessibility impairment toggles and a new language
-          section, where you could select your preferred language to communicate in, as well as a scale of how
-          comfortable the user's English level was.</p>
-      </div>
-      <div class="row mt-5 no-margin">
-        <h5 class="line-height-2"><u>Entry Point 2</u></h5>
-      </div>
-      <div class="row no-margin line-height-2">
-        <p>In Entry Point 2, we developed 2 different versions of this redesign. One was a full-length scrollable page
-          which would contain all the additional information the user could input under collapsible tabs. The other was
-          based on a pop-up functionality, which would have overlayed windows to display the options for each new
-          feature. The 3 main features added were a conversation level setting, a clothing setting to communicate to the
-          driver what the user would be wearing for easy pickup, and a special request box.</p>
-      </div>
-      <div class="row mt-5 no-margin">
-        <h5 class="line-height-2"><u>Entry Point 3</u></h5>
-      </div>
-      <div class="row no-margin line-height-2">
-        <p>Entry Point 3 was completely built with communication issues of the user in mind. We wanted to provide a way
-          for the user to communicate with the driver if verbal communication was, for some reason, interrupted. This
-          could be on the user side if they had a hearing impairment or had trouble verbally communicating with the
-          driver, or if the user didn’t want to converse with the driver, but still had information they would like to
-          communicate with the driver. These options would be available to the user during the ride based on their
-          needs: add a stop, roll up/down the windows, change the A/C, adjust the music volume, or modify the level of
-          conversation between the user and the driver.</p>
-      </div>
-      <div class="row mt-5 no-margin">
-        <h5 class="line-height-2"><u>Entry Point 4</u></h5>
-      </div>
-      <div class="row no-margin line-height-2">
-        <p>Entry Point 4 was also the second area of our redesign with 2 versions to compare between. In this entry
-          point, we utilized a label-based rating system to replace the current 5-star rating, and included both
-          positive and negative labels. We chose to use label-based choices to make this rating system faster and easier
-          to fill out. Our A/B versions differed by essentially making version A combine all parts of the post-trip menu
-          into one full-height screen, whereas version B would have a 2 part menu, where one would be ratings and the
-          second payment details.</p>
-      </div>
-
-      <div class="row mt-5 no-margin margin-tb-2">
-        <h5 class="line-height-2"><b>User Testing & Feedback</b></h5>
-      </div>
-      <div class="no-margin margin-tb-2 line-height-2">
-        <p>Using the paper prototype, 3 randomly chosen participants were given four tasks to perform:</p>
-        <div class="pre-numbered" id="num1">
-          <p>Change accessibility preference. (Entry Point 1)</p>
+      <div id="lofi-explain1">
+        <div class="row mt-5 no-margin">
+          <h5 class="line-height-2"><u>Entry Point 1</u></h5>
         </div>
-        <div class="pre-numbered" id="num2">
-          <p>Set clothing color, conversation preference, and special request. (Entry Point 2)</p>
-        </div>
-        <div class="pre-numbered" id="num3">
-          <p>Set mid-drive options. (Entry Point 3)</p>
-        </div>
-        <div class="pre-numbered" id="num4">
-          <p>Rate the driver after the ride has ended. (Entry Point 4)</p>
-        </div>
-      </div>
-      <div class="row no-margin line-height-2">
-        <h5 class="line-height-2"><b>Point of View</b></h5>
-        <p style="margin-bottom: 2em;">With one person acting as the "computer" to manipulate the paper screens while
-          performing A/B testing, we were able to identify the main takeaways for our redesign.</p>
-        <p>Overall, our redesign was met with generally positive responses, with only slight confusion shown in a
-          couple areas. Our A/B testing yielded interesting insights that we may utilize to improve the UI of each of
-          the entry points. In all our designs, the main trend was that the design must be inclusive, require little
-          cognitive effort to understand and use, and clear and direct.</p>
-        <!-- <p><u>Entry Point 1</u> experienced the fewest problems with our participants. All our testers were able to
-          quickly and effectively navigate and utilize the new feature. This indicated that this feature would be an
-          effective feature to include with minimal redesign, and would help with communicating such vital and specific
-          information to drivers ahead of time without supplementary user interaction.</p>
-        <p><u>Entry Point 2</u> had mixed feedback, with 2/3 testers preferring version B for its simple, clean, and
-          easy to use layout. One tester mentioned how color-blindness could be a potential problem with version B's
-          clothing color slider, and our female tester raised the issue of whether there was a way to change the shorts
-          to a skirt. This showed us that we needed to implement more inclusive or gender-neutral clothing icons.
-          Furthermore, all participants had positive responses to the conversation setting, although one mentioned that
-          they would like to see a larger range of options. Overall, our main takeaways for Entry Point 2 was that what
-          we design must be inclusive, simple and easy to use, and clear/direct.</p>
-        <p><u>Entry Point 3</u> received generally positive responses, with the main gripes to fix being relatively
-          minor. One key user feedback was that in general, the music settings would be used the most, with the least
-          being the communication setting, most likely since the rider had already set this before they got into the
-          car. The features on the page may also need to be clearer and more well defined if implemented.</p>
-        <p><u>Entry Point 4</u>'s revamp was very well accepted. There was little confusion in the rating system, and
-          interestingly, none of the participants questioned where the 5-star rating had gone, which demonstrates the
-          viability of the labeled rating system as being equally, if not more, effective than the 5-star rating, though
-          further testing may be required to verify this. The A/B versions were slightly more mixed, with a majority
-          citing version B as being better for separating personal info from the payment, as well as reducing the
-          potential of priming the tipping behavior. Most likely, we will combine the best of the two versions.</p> -->
-      </div>
-
-    </div>
-  </section>
-
-  <section class="HiFi-Prototype less-padding">
-    <div class="container ex-padding">
-      <div class="subheading">
-        <h2 class="project-section-title">
-          <span>High-Fidelity Prototyping</span>
-        </h2>
         <div class="row no-margin line-height-2">
-          <p>Final Proposed Solution</p>
+          <p>In Entry Point 1, our goal was to make design choices that would be low-impact and seamlessly connect with
+            the current profile page UI of Lyft. We added additional accessibility impairment toggles and a new language
+            section, where you could select your preferred language to communicate in, as well as a scale for the user's
+            level of comfort in English.</p>
+        </div>
+      </div>
+      <div id="lofi-explain2">
+        <div class="row mt-5 no-margin">
+          <h5 class="line-height-2"><u>Entry Point 2</u></h5>
+        </div>
+        <div class="row no-margin line-height-2">
+          <p>In Entry Point 2, we developed 2 different versions of this redesign. One was a full-length scrollable page
+            which would contain all the additional information the user could input under collapsible tabs. The other
+            was
+            based on a pop-up functionality, which would have overlayed windows to display the options for each new
+            feature. The 3 main features added were a conversation level setting, a clothing setting to communicate to
+            the
+            driver what the user would be wearing for easy pickup, and a special request box.</p>
+        </div>
+      </div>
+      <div id="lofi-explain3">
+        <div class="row mt-5 no-margin">
+          <h5 class="line-height-2"><u>Entry Point 3</u></h5>
+        </div>
+        <div class="row no-margin line-height-2">
+          <p>Entry Point 3 was completely built with communication issues of the user in mind. We wanted to provide a
+            way
+            for the user to communicate with the driver if verbal communication was, for some reason, interrupted. This
+            could be on the user side if they had a hearing impairment or had trouble verbally communicating with the
+            driver, or if the user didn’t want to converse with the driver, but still had information they would like to
+            communicate with the driver. These options would be available to the user during the ride based on their
+            needs: add a stop, roll up/down the windows, change the A/C, adjust the music volume, or modify the level of
+            conversation between the user and the driver.</p>
+        </div>
+      </div>
+      <div id="lofi-explain4">
+        <div class="row mt-5 no-margin">
+          <h5 class="line-height-2"><u>Entry Point 4</u></h5>
+        </div>
+        <div class="row no-margin line-height-2">
+          <p>Entry Point 4 was also the second area of our redesign with 2 versions to compare between. In this entry
+            point, we utilized a label-based rating system to replace the current 5-star rating, and included both
+            positive and negative labels. We chose to use label-based choices to make this rating system faster and
+            easier
+            to fill out. Our A/B versions differed by essentially making version A combine all parts of the post-trip
+            menu
+            into one full-height screen, whereas version B would have a 2 part menu, where one would be ratings and the
+            second payment details.</p>
         </div>
       </div>
 
-      <div class="row no-margin line-height-2">
-        <p>Once we had a solid idea of the main components of the UI, we took our low-fidelity prototypes and converted
-          them to high-fidelity prototypes with Figma. We continued developing multiple versions to continually iterate
-          and improve on the design, until we ended with with our final prototype. One of the main areas of focus here
-          was to develop the redesigned UI with the style of Lyft in mind.</p>
-      </div>
 
-      <div class="row no-margin margin-tb-2 line-height-2">
-        <h5 class="line-height-2"><b>Final Redesign</b></h5>
-        <p>We decided to obtain additional feedback from our peers with another two versions of the same screen, which
-          was invaluable to our final design.</p>
-      </div>
-      <div class="row no-margin margin-tb-2 line-height-2">
-        <div class="col-4 mx-auto">
-          <img class="d-block w-100" src="img/Before-After-1.png">
+      <div id="usr-test-feed">
+        <div class="row mt-5 no-margin margin-tb-2">
+          <h5 class="line-height-2"><b>User Testing & Feedback</b></h5>
         </div>
-        <div class="col-8 mx-auto">
-          <p>Overall, there were mixed feedback from both version A and B, with our users liking version B's options of
-            choosing the clothing type but preferred version A's speed and ease of use. We took the feedback obtained
-            and combined together the best from both versions to produce the final result.To reduce usage errors, we
-            decided to reduce the number of colors and increase the size of the color selection palette, while combining
-            the functionality of the clothing selector in a quick and easy selection window.</p>
+        <div class="no-margin margin-tb-2 line-height-2">
+          <p>Using the paper prototype, 3 randomly chosen participants were given four tasks to perform:</p>
+          <div class="pre-numbered" id="num1">
+            <p>Change accessibility preference. (Entry Point 1)</p>
+          </div>
+          <div class="pre-numbered" id="num2">
+            <p>Set clothing color, conversation preference, and special request. (Entry Point 2)</p>
+          </div>
+          <div class="pre-numbered" id="num3">
+            <p>Set mid-drive options. (Entry Point 3)</p>
+          </div>
+          <div class="pre-numbered" id="num4">
+            <p>Rate the driver after the ride has ended. (Entry Point 4)</p>
+          </div>
         </div>
       </div>
-      <div class="row no-margin margin-tb-2 line-height-2">
-        <div class="col-6 mx-auto">
-          <p>The finalized review screen is an updated version of the alternative version (Type B). The feedback we
-            received relayed a tendency to like the single-screen version better. We took the non-Lyft-like UI style and
-            revamped it to match the Lyft theme, which was a vast improvement. In addition, we noticed that some of our
-            users may be in a rush and not want to rate their driver with such a detailed review scheme, so we included
-            a skip to payment button to finish the ride as fast as possible, with the ability for the user to review the
-            ride later. Finally, we added an option to email or text a summary of the trip with payment details.
-          </p>
+      <div id="pov">
+        <div class="row no-margin line-height-2">
+          <h5 class="line-height-2"><b>Point of View</b></h5>
+          <p style="margin-bottom: 2em;">With one person acting as the "computer" to manipulate the paper screens while
+            performing A/B testing, we were able to identify the main takeaways for our redesign.</p>
+          <p>Overall, our redesign was met with generally positive responses, with only slight confusion shown in a
+            couple areas. Our A/B testing yielded interesting insights that we may utilize to improve the UI of each of
+            the entry points. In all our designs, the main trend was that the design must be inclusive, require little
+            cognitive effort to understand and use, and clear and direct.</p>
+          <!-- <p><u>Entry Point 1</u> experienced the fewest problems with our participants. All our testers were able to
+            quickly and effectively navigate and utilize the new feature. This indicated that this feature would be an
+            effective feature to include with minimal redesign, and would help with communicating such vital and
+            specific information to drivers ahead of time without supplementary user interaction.</p>
+          <p><u>Entry Point 2</u> had mixed feedback, with 2/3 testers preferring version B for its simple, clean, and
+            easy to use layout. One tester mentioned how color-blindness could be a potential problem with version B's
+            clothing color slider, and our female tester raised the issue of whether there was a way to change the
+            shorts to a skirt. This showed us that we needed to implement more inclusive or gender-neutral clothing
+            icons. Furthermore, all participants had positive responses to the conversation setting, although one
+            mentioned that they would like to see a larger range of options. Overall, our main takeaways for Entry Point
+            2 was that what we design must be inclusive, simple and easy to use, and clear/direct.</p>
+          <p><u>Entry Point 3</u> received generally positive responses, with the main gripes to fix being relatively
+            minor. One key user feedback was that in general, the music settings would be used the most, with the least
+            being the communication setting, most likely since the rider had already set this before they got into the
+            car. The features on the page may also need to be clearer and more well defined if implemented.</p>
+          <p><u>Entry Point 4</u>'s revamp was very well accepted. There was little confusion in the rating system, and
+            interestingly, none of the participants questioned where the 5-star rating had gone, which demonstrates the
+            viability of the labeled rating system as being equally, if not more, effective than the 5-star rating,
+            though further testing may be required to verify this. The A/B versions were slightly more mixed, with a
+            majority citing version B as being better for separating personal info from the payment, as well as reducing
+            the potential of priming the tipping behavior. Most likely, we will combine the best of the two versions.
+          </p> -->
         </div>
-        <div class="col-6 mx-auto">
-          <img class="d-block w-100" src="img/Before-After-2.png">
-        </div>
       </div>
 
 
-
-      <div class="row no-margin margin-tb-2 line-height-2">
-        <h5 class="line-height-2"><b>Language and Accessibility Revamp</b></h5>
-        <p>Three new options are added in the setting - “Vision Impaired”, “Hearing Impaired”, and Preferred Language.
-          The users can choose the first two options using a toggle button. For preferred language, if the users click
-          on it, they will be brought to another page, where the user can choose their preferred language and choose
-          their level of English fluency so that the drivers would have a better idea about their customer’s background,
-          promoting better understanding while in vehicle.</p>
-      </div>
-      <div class="row no-margin margin-tb-2 line-height-2">
-        <h5 class="line-height-2"><b>Conversation, Clothing, and Other Requests</b></h5>
-        <p>Three new buttons are added to the page when the driver is en route to pick up the passenger. A clothing
-          option for the users to select their current color of clothes, a chat preference option for them to select set
-          conversation expectations, and an other request option which includes a textbox for any additional information
-          they want to tell the driver before getting in the car. The clothing selector allows the rider to better tell
-          the driver who they are and improve pick-up efficiency. The chat preference selector is intended to reduce
-          awkwardness or disturbances during the ride by informing the driver of the rider's conversation expectations.
-          The request box allows the user to add additional information that may be helpful for the driver, so that the
-          driver is prepared immediately upon pickup. All three options are not required for the users to do, and are
-          designed to be inputted during the free time the user has while waiting for the driver to arrive.
-        </p>
-      </div>
-
-      <div class="row no-margin margin-tb-2 line-height-2">
-        <h5 class="line-height-2"><b>Mid-Drive Settings</b></h5>
-        <p>During the ride, if the users are not willing or able to talk to the drivers for any reason, the users can
-          use this screen to adjust their preference in the car including the chat preference, window level, fan
-          control, and music volume. This would then send a notification to the driver, who can then adjust the settings
-          to the users' preferences</p>
-      </div>
-
-      <div class="row no-margin margin-tb-2 line-height-2">
-        <h5 class="line-height-2"><b>Contextual Rating</b></h5>
-        <p>Our final product emerged with a single full-length scrollable page to eliminate having to click through
-          multiple submit buttons. Rating labels would be categorized between positives and negatives, and an option to
-          add user-generated labels is included. From previous user feedback, we included the option for users to skip
-          the rating if in a rush and come back at a later time to finish the review.</p>
-      </div>
     </div>
   </section>
 
-  <section class="reflection less-padding">
+  <section id="HiFi-Prototype" class="less-padding">
+    <div class="container ex-padding">
+      <div id="hifi-intro">
+        <div class="subheading">
+          <h2 class="project-section-title">
+            <span>High-Fidelity Prototyping</span>
+          </h2>
+          <div class="row no-margin line-height-2">
+            <p>Finalizing the Concept</p>
+          </div>
+        </div>
+
+        <div class="row no-margin line-height-2">
+          <p>Once we had a solid idea of the main components of the UI, we took our low-fidelity prototypes and
+            converted
+            them to high-fidelity prototypes with Figma. We continued developing multiple versions to continually
+            iterate
+            and improve on the design, until we ended with with our final prototype. One of the main areas of focus here
+            was to develop the redesigned UI with the style of Lyft in mind. Many of the decisions and finishing touches
+            made here impacted the finalized product.</p>
+        </div>
+      </div>
+
+      <div id="final-redesign">
+        <div class="row no-margin margin-tb-2 line-height-2">
+          <h5 class="line-height-2"><b>Final Redesign</b></h5>
+          <p>We decided to obtain additional feedback from our peers with another two versions of the same screen, which
+            was invaluable to our final design.</p>
+        </div>
+        <div class="row no-margin margin-tb-2 line-height-2">
+          <div class="col-4 mx-auto">
+            <img class="d-block w-100" src="img/Before-After-1.png">
+          </div>
+          <div class="col-8 mx-auto">
+            <p>Overall, there were mixed feedback from both version A and B, with our users liking version B's options
+              of
+              choosing the clothing type but preferred version A's speed and ease of use. We took the feedback obtained
+              and combined together the best from both versions to produce the final result.To reduce usage errors, we
+              decided to reduce the number of colors and increase the size of the color selection palette, while
+              combining
+              the functionality of the clothing selector in a quick and easy selection window.</p>
+          </div>
+        </div>
+        <div class="row no-margin margin-tb-2 line-height-2">
+          <div class="col-6 mx-auto">
+            <p>The finalized review screen is an updated version of the alternative version (Type B). The feedback we
+              received relayed a tendency to like the single-screen version better. We took the non-Lyft-like UI style
+              and
+              revamped it to match the Lyft theme, which was a vast improvement. In addition, we noticed that some of
+              our
+              users may be in a rush and not want to rate their driver with such a detailed review scheme, so we
+              included
+              a skip to payment button to finish the ride as fast as possible, with the ability for the user to review
+              the
+              ride later. Finally, we added an option to email or text a summary of the trip with payment details.
+            </p>
+          </div>
+          <div class="col-6 mx-auto">
+            <img class="d-block w-100" src="img/Before-After-2.png">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="polished-design" class="less-padding">
+    <div class="container ex-padding">
+      <div id="polish-design-intro">
+        <div class="subheading">
+          <h2 class="project-section-title">
+            <span>The Polished Design</span>
+          </h2>
+          <div class="row no-margin line-height-2">
+            <p>The Final Proposed Design and its Features</p>
+          </div>
+        </div>
+
+        <div class="row no-margin line-height-2">
+          <p>At the end of our quarter-long journey, we present our design with its many facets of improvements. Below
+            you
+            will find the 4 major components of our redesign:</p>
+        </div>
+      </div>
+
+      <div id="lang-access">
+        <div class="row no-margin mt-5 mb-5 line-height-2">
+          <h5 class="line-height-2"><b>Language and Accessibility</b></h5>
+          <p>Three new options are added in the setting - “Vision Impaired”, “Hearing Impaired”, and Preferred Language.
+            The users can choose the first two options using a toggle button. For preferred language, if the users click
+            on it, they will be brought to another page, where the user can choose their preferred language and choose
+            their level of English fluency so that the drivers would have a better idea about their customer’s
+            background,
+            promoting better understanding while in vehicle.</p>
+          <div id="get-margin-screen" class="col-3 mx-auto no-padding shadow">
+            <img id="settings-scrn-w" class="d-block w-100" src="img/Final Screens/User Setting Final.svg">
+          </div>
+          <div id="set-scrn-h" class="col-3 mx-auto no-padding shadow">
+            <img id="remove-me" class="d-block w-100" src="img/Final Screens/User Setting Final.svg">
+          </div>
+          <div class="col-3 mx-auto no-padding shadow">
+            <img class="d-block w-100" src="img/Final Screens/Preferred Language Final.svg">
+          </div>
+        </div>
+      </div>
+
+      <div id="CCnOR">
+        <div class="row no-margin mt-5 mb-5 line-height-2">
+          <div class="col-8 margin-tb-2">
+            <h5 class="line-height-2"><b>Conversation, Clothing, and Other Requests</b></h5>
+            <p>Three new buttons are added to the page when the driver is en route to pick up the passenger. A clothing
+              option for the users to select their current color of clothes, a chat preference option for them to select
+              set
+              conversation expectations, and an other request option which includes a textbox for any additional
+              information
+              they want to tell the driver before getting in the car. The clothing selector allows the rider to better
+              tell
+              the driver who they are and improve pick-up efficiency. The chat preference selector is intended to reduce
+              awkwardness or disturbances during the ride by informing the driver of the rider's conversation
+              expectations.
+              The request box allows the user to add additional information that may be helpful for the driver, so that
+              the
+              driver is prepared immediately upon pickup. All three options are not required for the users to do, and
+              are
+              designed to be inputted during the free time the user has while waiting for the driver to arrive.
+            </p>
+          </div>
+          <div class="col-4">
+            <div class="pb-5" style="text-align: center; justify-content: center; width: 100%">
+              <div class="col-lg-10 mx-auto mt-5 no-padding shadow">
+                <img class="d-block w-100" src="img/Final Screens/Driver En Route Final.svg">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-5 mx-auto mb-3 no-padding shadow">
+            <img class="d-block w-100" src="img/Final Screens/Clothing Page A+Popup.svg">
+          </div>
+          <div class="col-lg-3 col-md-5 mx-auto mb-3 no-padding shadow">
+            <img class="d-block w-100" src="img/Final Screens/Chat Preference Page.svg">
+          </div>
+          <div class="col-lg-3 col-md-5 mx-auto mb-3 no-padding shadow">
+            <img class="d-block w-100" src="img/Final Screens/Other Request Page.svg">
+          </div>
+
+        </div>
+      </div>
+
+      <div id="mid-drive">
+        <div class="row no-margin mt-5 mb-5 line-height-2">
+          <div class="col-6" style="text-align: center; justify-content: center; width: 100%">
+            <div class="col-lg-6 mx-auto mt-3 no-padding shadow">
+              <img class="d-block w-100" src="img/Final Screens/Mid Drive Settings.svg">
+            </div>
+          </div>
+          <div class="col-6">
+            <h5 class="line-height-2"><b>Mid-Drive Notifications</b></h5>
+            <p>During the ride, if the users are not willing or able to talk to the drivers for any reason, the users
+              can
+              use this screen to adjust their preference in the car including the chat preference, window level, fan
+              control, and music volume. This would then send a notification to the driver, who can then adjust the
+              settings to the users' preferences</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="context-rate">
+        <div class="row no-margin mt-4 line-height-2">
+          <div class="col-6">
+            <h5 class="line-height-2"><b>Contextual Rating</b></h5>
+            <p>Our final product emerged with a single full-length scrollable page to eliminate having to click through
+              multiple submit buttons. Rating labels would be categorized between positives and negatives, and an option
+              to
+              add user-generated labels is included. From previous user feedback, we included the option for users to
+              skip
+              the rating if in a rush and come back at a later time to finish the review.</p>
+          </div>
+          <div class="col-6" style="text-align: center; justify-content: center; width: 100%">
+            <div id="final-rating-screen" class="col-lg-5 mx-auto no-padding shadow">
+              <img class="d-block w-100" src="img/Final Screens/Rating Page-V3.svg">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+  <section id="reflection" class="less-padding">
     <div class="container ex-padding">
       <div class="subheading">
         <h2 class="project-section-title">
@@ -869,14 +1100,28 @@
           team too thinly to appropriately address each problem space. Although this final redesign is a good step
           towards the right direction in improving communication among ridesharing services, more detailed redesign may
           be needed to fully flesh out each part of the app.</p>
-        <p>Yet in today's era, it is all the more vital to create good, intuitive, human-centered design. We as
+        <!-- <p>Yet in today's era, it is all the more vital to create good, intuitive, human-centered design. We as
           designers, are those who keep the world from becoming a disorganized monstrosity, struggling to achieve the
-          unimaginable. I encourage you, in any form of design, to keep persevering and design not for design's
+          unimaginable. I encourage you, in any form of design, to keep going further and design not for design's
           sake, but for humanity's sake.</p>
-        <p>~ Jonathan Fong, Designer at UCSD</p>
+        <p>~ Jonathan Fong, Designer at UCSD</p> -->
       </div>
     </div>
   </section>
+
+  <div id="top-icon-btn" class="sr-icon fadeRise" title="Go to top">
+    <a id="to-top" class="js-scroll-trigger" href="#page-top">
+      <i id="double-up-icon" class="fa fa-2x fa-chevron-up"></i>
+    </a>
+  </div>
+
+  <div class="bg-dark">
+    <div class="container">
+      <div class="row-1 ml-auto text-center">
+        <a href="#page-top" class="js-scroll-trigger" style="text-align: center">Back to top</a>
+      </div>
+    </div>
+  </div>
 
 
   <!-- Tab links -->
@@ -890,14 +1135,21 @@
 
 
   <!-- Bootstrap core JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+    integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+
+  <!-- Jquery/Scroll Reveal JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.compatibility.min.js"></script>
+  <!-- <script src="vendor/jquery-easing/jquery.easing.min.js"></script> -->
+  <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
 
   <!-- Scripts -->
   <script src="js/projectA.js"></script>

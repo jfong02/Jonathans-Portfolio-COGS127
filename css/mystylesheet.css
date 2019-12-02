@@ -2,6 +2,9 @@ body,
 html {
   width: 100%;
   height: 100%;
+	margin: 0;
+  animation: fadeRiseEffect 1s; /* Fading/Rising effect takes 1s after 0.25s delay to */
+                                /* allow time for more elements to load in */
 }
 
 body {
@@ -37,10 +40,15 @@ a:hover {
 h1,
 h2,
 h3,
-h4,
+h4 {
+  /* font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; */
+  font-family: 'Montserrat', sans-serif;
+}
+
 h5,
 h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  /* font-family: 'Montserrat', sans-serif; */
 }
 
 .bg-primary {
@@ -59,6 +67,35 @@ h6 {
 
 .bg-grey {
   background-color: lightgrey;
+}
+
+#top-icon-btn {
+	display: none; /* Hidden by default */
+	position: fixed; /* Fixed/sticky position */
+	bottom: 20px; /* Place the button at the bottom of the page */
+	right: 30px; /* Place the button 30px from the right */
+	z-index: 99; /* Make sure it does not overlap */
+	border: none; /* Remove borders */
+	outline: none; /* Remove outline */
+	background-color: rgba(17, 14, 35, 0.1); /* Set a background color */
+	color: black; /* Text color */
+	cursor: pointer; /* Add a mouse pointer on hover */
+	padding: 10px; /* Some padding */
+	border-radius: 5px;
+	font-size: 18px; /* Increase font size */
+}
+#top-icon-btn:hover {
+  background-color: rgba(17, 14, 35, 0.3); /* Add a dark-grey background on hover */
+}
+#to-top {
+	width: 36px;
+	height: 36px;
+	text-align: center;
+	justify-content: center;
+	vertical-align: middle;
+}
+#double-up-icon {
+	color:rgba(17, 14, 35, 0.2);
 }
 
 .triangledownblue{
@@ -157,6 +194,10 @@ h6 {
 
 .no-margin {
   margin: 0;
+}
+
+.fadeRise {
+	animation: fadeRiseEffect 0.75s;
 }
 
 /* Can be used as mini section */
@@ -560,19 +601,15 @@ header.masthead p {
 /* TABS FOR PROJECT */
 
 /* Set height of body and the document to 100% to enable "full page tabs" */
-body, html {
-  height: 100%;
-  margin: 0;
-  animation: fadeRiseEffect 0.75s; /* Fading/Rising effect takes 0.75 second */
-}
 
 .project-header {
+  background-image: linear-gradient(-220deg, #110E23, #391d46,#823A86,#F475A0,#F8B491);
   background-color: rgb(64, 2, 180);
   padding-bottom: 3em;
-  padding-top: 8em;
+  overflow: hidden;
 }
 
-.project-overview {
+#project-overview {
   padding-top: 4em;
 }
 
@@ -583,6 +620,14 @@ body, html {
 .subheading {
   margin-bottom: 3em;
 }
+
+/* Change hover over the links to go to different parts of proj */
+/* please edit more... colors are kinda arbitrarily chosen */
+.proj-section-link:hover {
+	color: #110E23!important;
+	text-decoration-color: #823A86;
+}
+
 .project-section-title {
   position: relative;
 }
@@ -592,14 +637,27 @@ body, html {
   margin-left: -10px;
 }
 .project-section-title:before {
-  border-top: 1px solid rgba(20,20,20,0.1);
+	border-top: 1px solid rgba(20,20,20,0.2);
+	top: 50%;
+	bottom: 0;
+	
+	/* background-color: rgba(244, 117, 160, 0.2);
+  background-image: linear-gradient(
+		-220deg, rgba(17, 14, 35, 0.1),
+		rgba(57, 29, 70, 0.2),
+		rgba(130, 58, 134, 0.2),
+		rgba(244, 117, 160, 0.2),
+		rgba(248, 180, 145, 0.1)
+	);
+	top: 47%;
+	bottom: 47%; */
+	
   content: "";
   margin: 0 auto;
   position: absolute;
   display: inline-block;
-  top: 50%;
+  /* left: -14.1%; */
   left: -22.5%;
-  bottom: 0;
   width: 100vw;
   z-index: -1;
 }
@@ -611,7 +669,7 @@ body, html {
   color: #ff00bf;
   font-weight: 600;
   position: absolute;
-  left: 4em;
+  left: -1.5em;
   padding-bottom: 10px;
   padding-top: 5px;
   font-style: normal;
@@ -624,7 +682,7 @@ body, html {
   color: #ff00bf;
   font-weight: 600;
   position: absolute;
-  left: 4em;
+  left: -1.5em;
   padding-bottom: 10px;
   padding-top: 5px;
   font-style: normal;
@@ -637,7 +695,7 @@ body, html {
   color: #ff00bf;
   font-weight: 600;
   position: absolute;
-  left: 4em;
+  left: -1.5em;
   padding-bottom: 10px;
   padding-top: 5px;
   font-style: normal;
@@ -650,7 +708,7 @@ body, html {
   color: #ff00bf;
   font-weight: 600;
   position: absolute;
-  left: 4em;
+  left: -1.5em;
   padding-bottom: 10px;
   padding-top: 5px;
   font-style: normal;
@@ -658,23 +716,47 @@ body, html {
 }
 
 .carousel-inner {
-  background-color: #343a40;
+	/* background-color: #343a40; */
+	background-image: linear-gradient(
+		-220deg, rgba(17, 14, 35, 1),
+		rgba(57, 29, 70, 1),
+		rgba(130, 58, 134, 1),
+		rgba(244, 117, 160, 1)
+	);
   border-radius: 15px;
 }
 
-.persona-item {
-  padding: 100px 120px 50px 120px;
-  height: 680px;
-  margin: auto;
-  vertical-align: middle;
-  justify-content: center;
+@media (min-width: 992px) {
+	.persona-item {
+		padding: 100px 120px 50px 120px;
+		min-height: 768px;
+		margin: auto;
+		vertical-align: middle;
+		justify-content: center;
+	}
+}
+@media (max-width: 991px) {
+	.persona-item {
+		padding: 100px 120px 50px 120px;
+		height: 1092px;
+		margin: auto;
+		vertical-align: middle;
+		justify-content: center;
+	}
 }
 
+
+.persona-item > .persona-pic,
 .persona-item > .name,
 .persona-item > .description,
 .persona-item > .bio {
   text-align: center;
   justify-content: center;
+}
+
+.persona-item > .persona-pic > img.p-pic {
+  width: 100px;
+	height: auto;
 }
 
 .persona-item > .details
@@ -684,7 +766,21 @@ body, html {
   justify-content: center;
 }
 
+/* Remove scrollbar from this screen */
+#set-scrn-h::-webkit-scrollbar {
+	background: transparent!important
+}
 
+@media (min-width: 992px) {
+	#final-rating-screen {
+		top: -4em;
+	}
+}
+
+/* ::-webkit-scrollbar {
+	width: 0px!important;
+	background: transparent!important;
+} */
 
 
 /* .project-overview-info:before {
@@ -710,38 +806,6 @@ body, html {
   z-index: 1;
 } */
 
-/* Style tab links */
-.tablink {
-  background-color: #555;
-  color: white;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  font-size: 17px;
-  width: 50%;
-  /* width: 33.333333333%; */
-  /* border-top-left-radius: 25px;
-  border-top-right-radius: 25px; */
-}
-
-.tablink:hover {
-  background-color: #777;
-}
-
-/* Style the tab content (and add height:100% for full page content) */
-.tabcontent {
-  display: none;
-  padding: 0px 20px;
-  margin-top: 100px;
-  animation: fadeEffect 1s; /* Fading effect takes 1 second */
-}
-
-#Corgant {background-color: white;}
-#News {background-color: green;}
-#Contact {background-color: blue;}
-
 /* Go from zero to full opacity */
 @keyframes fadeEffect {
   from {opacity: 0;}
@@ -750,7 +814,8 @@ body, html {
 
 /* Fade/Rise animation */
 @keyframes fadeRiseEffect {
-  from { transform: translateY(1em); opacity: 0; }
-  to   { transform: translateY(0em); opacity: 1; }
+  0% { transform: translateY(1em); opacity: 0; }
+  25% { transform: translateY(1em); opacity: 0; }
+  100%   { transform: translateY(0em); opacity: 1; }
 }
 
