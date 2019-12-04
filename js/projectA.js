@@ -85,155 +85,22 @@
   var revealDist = '20px';
   var revealDur = 900;
   var revealInter = 100;
-  sr.reveal('#my-role', {
-    duration: revealDur,
-    distance: revealDist,
-    interval: revealInter,
-  });
-  sr.reveal('#role-details', {
-    duration: revealDur,
-    distance: revealDist,
-    interval: revealInter,
-  });
-  sr.reveal('#project-process', {
-    duration: revealDur,
-    distance: revealDist,
-    interval: revealInter,
-  });
-  sr.reveal('#usr-research-intro', {
-    duration: revealDur,
-    distance: revealDist,
-    interval: revealInter,
-  });
-  sr.reveal('#research-goals', {
-    duration: revealDur,
-    distance: revealDist,
-    interval: revealInter,
-  });
-  sr.reveal('#research-methods', {
-    duration: revealDur,
-    distance: revealDist,
-    interval: revealInter,
-  });
-  sr.reveal('#probl-state', {
-    duration: revealDur,
-    distance: revealDist,
-    interval: revealInter,
-  });
-  sr.reveal('#personas-intro', {
-    duration: revealDur,
-    distance: revealDist,
-    interval: revealInter,
-  });
-  sr.reveal('#personas-stuff', {
-    duration: revealDur,
-    distance: revealDist,
-    interval: revealInter,
-  });
-  sr.reveal('#competitive-audit', {
-    duration: revealDur,
-    distance: revealDist,
-    interval: revealInter,
-  });
-  sr.reveal('#ux-flow', {
-    duration: revealDur,
-    distance: revealDist,
-    interval: revealInter,
-  });
-  sr.reveal('#ux-flow-explain', {
-    duration: revealDur,
-    distance: revealDist,
-    interval: revealInter,
-  });
-  sr.reveal('#ui-sketch', {
-    duration: revealDur,
-    distance: revealDist,
-    interval: revealInter,
-  });
-  sr.reveal('#lofi-intro', {
-    duration: revealDur,
-    distance: revealDist,
-    interval: revealInter,
-  });
-  sr.reveal('.lowfi-proto-img', {
-    duration: revealDur,
-    distance: revealDist,
-    interval: revealInter,
-  });
-  sr.reveal('#lofi-explain1', {
-    duration: revealDur,
-    distance: revealDist,
-    interval: revealInter,
-  });
-  sr.reveal('#lofi-explain2', {
-    duration: revealDur,
-    distance: revealDist,
-    interval: revealInter,
-  });
-  sr.reveal('#lofi-explain3', {
-    duration: revealDur,
-    distance: revealDist,
-    interval: revealInter,
-  });
-  sr.reveal('#lofi-explain4', {
-    duration: revealDur,
-    distance: revealDist,
-    interval: revealInter,
-  });
-  sr.reveal('#usr-test-feed', {
-    duration: revealDur,
-    distance: revealDist,
-    interval: revealInter,
-  });
-  sr.reveal('#pov', {
-    duration: revealDur,
-    distance: revealDist,
-    interval: revealInter,
-  });
-  sr.reveal('#hifi-intro', {
-    duration: revealDur,
-    distance: revealDist,
-    interval: revealInter,
-  });
-  sr.reveal('#final-redesign', {
-    duration: revealDur,
-    distance: revealDist,
-    interval: revealInter,
-  });
-  sr.reveal('#final-redesign', {
-    duration: revealDur,
-    distance: revealDist,
-    interval: revealInter,
-  });
-  sr.reveal('#polish-design-intro', {
-    duration: revealDur,
-    distance: revealDist,
-    interval: revealInter,
-  });
-  sr.reveal('#lang-access', {
-    duration: revealDur,
-    distance: revealDist,
-    interval: revealInter,
-  });
-  sr.reveal('#CCnOR', {
-    duration: revealDur,
-    distance: revealDist,
-    interval: revealInter,
-  });
-  sr.reveal('#mid-drive', {
-    duration: revealDur,
-    distance: revealDist,
-    interval: revealInter,
-  });
-  sr.reveal('#context-rate', {
-    duration: revealDur,
-    distance: revealDist,
-    interval: revealInter,
-  });
+
+  sr.reveal('#my-role, #role-details, #project-process, #usr-research-intro, #research-goals,\
+    #research-methods1, #quotes, #research-methods2, #probl-state, #personas-intro, #personas-stuff,\
+    #competitive-audit, #ux-flow, #ux-flow-explain, #ui-sketch, #lofi-intro, .lowfi-proto-img,\
+    #lofi-explain1, #lofi-explain2, #lofi-explain3, #lofi-explain4, #usr-test-feed, #pov, #hifi-intro,\
+    #final-redesign, #bna-1, #bna-2, #polish-design-intro, #lang-access, #CCnOR, #mid-drive, #context-rate',
+    {
+      duration: revealDur,
+      distance: revealDist,
+      interval: revealInter,
+    });
+
   sr.reveal('#reflection', {
     duration: revealDur,
     distance: revealDist,
-    viewOffset: { top: -10 },
+    viewOffset: { top: -20 },
     interval: revealInter,
   });
 
@@ -241,17 +108,23 @@
 
 })(jQuery); // End of use strict
 
-$(document).ready(() => {
-  console.log("loaded");
+$(document).ready(loadElements());
+
+function loadElements() {
 
   // get scrollbar width
   let scrollWidth = getScrollbarWidth();
 
-  temp = $('#proj-overview-col').height();
+  let temp = $('#proj-overview-col').height();
   // console.log(temp);
   document.getElementById('proj-overview-img').setAttribute("style", "height:" + temp + "px");
   // imgCode = "<img src='img/iPhone-8-RoseGold-Lyft-Mockup-Left-trbg.png' class='w-100'/>";
   // document.getElementById('proj-overview-img').append(imgCode);
+
+
+  // Set height for quote carousel
+  let qItemGet = $('#q-carousel-get-h').height();
+  $('#q-carousel-get-h').height(qItemGet);
 
 
   // create image for settings page final screen and remove scrollbar
@@ -271,13 +144,15 @@ $(document).ready(() => {
   });
 
   document.getElementById('set-scrn-h').appendChild(settingsImg);
-  document.getElementById('remove-me').remove();
+  if (document.getElementById('remove-me')) {
+    document.getElementById('remove-me').remove();
+  }
 
   // let settingwidth = parseFloat($('#settingsImg').css("width"));
   // console.log(settingwidth);
 
-
-});
+  console.log("loaded");
+}
 
 function getScrollbarWidth() {
 

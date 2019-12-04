@@ -26,6 +26,10 @@ hr.light {
   border-color: #fff;
 }
 
+hr.thin {
+  border-width: 1.5px;
+}
+
 a {
   color: #fff;
   -webkit-transition: all 0.2s;
@@ -715,7 +719,11 @@ header.masthead p {
   line-height: 1.3em;
 }
 
-.carousel-inner {
+#quotes > .carousel-inner {
+  background-color: whitesmoke;
+}
+
+#personaSlide > .carousel-inner {
 	/* background-color: #343a40; */
 	background-image: linear-gradient(
 		-220deg, rgba(17, 14, 35, 1),
@@ -724,6 +732,46 @@ header.masthead p {
 		rgba(244, 117, 160, 1)
 	);
   border-radius: 15px;
+}
+
+#quotes {
+  margin-top: 5em;
+  margin-bottom: 4em;
+}
+
+#carousel-quotes {
+  vertical-align: middle;
+  vertical-align: middle;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+}
+
+#qmarks-l {
+  text-align: left;
+  text-emphasis: 1em;
+  color: #ff00bf;
+}
+#qmarks-r {
+  text-align: right;
+  text-emphasis: 1em;
+  color: #ff00bf;
+}
+
+#carousel-quotes > .carousel-inner > .carousel-item > .quote-item > h4 {
+  margin: auto;
+  /* font-style: italic; */
+  margin-left: 1em;
+  margin-right: 1em;
+  font-weight: 400;
+  /* font-style: italic; */
+}
+
+.quote-controls-left {
+  left: -6.5em;
+}
+.quote-controls-right {
+  right: -6.5em;
 }
 
 @media (min-width: 992px) {
