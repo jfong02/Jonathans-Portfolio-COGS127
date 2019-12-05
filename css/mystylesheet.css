@@ -745,17 +745,20 @@ header.masthead p {
   justify-content: center;
   text-align: center;
   margin: auto;
+  /* box-shadow: 1px 1px 10px -1px rgba(240, 95, 64, 0.2); */
 }
 
 #qmarks-l {
   text-align: left;
   text-emphasis: 1em;
   color: #ff00bf;
+  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
 }
 #qmarks-r {
   text-align: right;
   text-emphasis: 1em;
   color: #ff00bf;
+  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
 }
 
 #carousel-quotes > .carousel-inner > .carousel-item > .quote-item > h4 {
@@ -764,7 +767,12 @@ header.masthead p {
   margin-left: 1em;
   margin-right: 1em;
   font-weight: 400;
-  /* font-style: italic; */
+  color: #ff00bf;
+  /* color: rgba(17, 14, 35, 0.9); */
+  font-style: italic;
+}
+.quote-who {
+  color: #ff00bf;
 }
 
 .quote-controls-left {
