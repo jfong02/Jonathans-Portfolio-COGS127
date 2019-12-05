@@ -2,6 +2,7 @@ body,
 html {
   width: 100%;
   height: 100%;
+  max-width: 100%;
 	margin: 0;
   animation: fadeRiseEffect 1s; /* Fading/Rising effect takes 1s after 0.25s delay to */
                                 /* allow time for more elements to load in */
