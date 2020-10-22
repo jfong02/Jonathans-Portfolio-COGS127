@@ -112,9 +112,6 @@ $(document).ready(loadElements());
 
 function loadElements() {
 
-  // get scrollbar width
-  let scrollWidth = getScrollbarWidth();
-
   let temp = $('#proj-overview-col').height();
   // console.log(temp);
   document.getElementById('proj-overview-img').setAttribute("style", "height:" + temp + "px");
@@ -140,39 +137,23 @@ function loadElements() {
   $('#set-scrn-h').css({
     "overflow-y": "hidden",
     "overflow-x": "hidden",
+    "position": "relative",
     // "width": scrollWidth + $('#set-scrn-h').width() + "px",
   });
 
-  document.getElementById('set-scrn-h').appendChild(settingsImg);
+  // Add screen to page
+  document.getElementById('settings-img-container').appendChild(settingsImg);
+  // remove placeholder screen
   if (document.getElementById('remove-me')) {
     document.getElementById('remove-me').remove();
   }
+
+  var set_img_contain = document.getElementById('settings-img-container');
+  var scrollbar_width = set_img_contain.clientWidth - set_img_contain.offsetWidth + "px";
+  set_img_contain.style.right = scrollbar_width;
 
   // let settingwidth = parseFloat($('#settingsImg').css("width"));
   // console.log(settingwidth);
 
   console.log("loaded");
-}
-
-function getScrollbarWidth() {
-
-  // Creating invisible container
-  const outer = document.createElement('div');
-  outer.style.visibility = 'hidden';
-  outer.style.overflow = 'scroll'; // forcing scrollbar to appear
-  outer.style.msOverflowStyle = 'scrollbar'; // needed for WinJS apps
-  document.body.appendChild(outer);
-
-  // Creating inner element and placing it in the container
-  const inner = document.createElement('div');
-  outer.appendChild(inner);
-
-  // Calculating difference between container's full width and the child width
-  const scrollbarWidth = (outer.offsetWidth - inner.offsetWidth);
-
-  // Removing temporary elements from the DOM
-  outer.parentNode.removeChild(outer);
-
-  return scrollbarWidth;
-
 }
